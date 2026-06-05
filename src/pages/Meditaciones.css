@@ -1,0 +1,148 @@
+/* ============================================
+   MEDITACIONES GUIADAS - DISEÑO EDITORIAL
+   ============================================ */
+
+/* Intro Text Centered */
+.intro-text-centered {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.intro-title {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 400;
+  color: var(--color-text-dark);
+  margin-bottom: var(--spacing-lg);
+}
+
+.intro-divider {
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-terracotta));
+  margin: 0 auto var(--spacing-xl);
+}
+
+.intro-text {
+  font-size: 1.1rem;
+  color: var(--color-text-light);
+  line-height: 1.9;
+  margin-bottom: var(--spacing-lg);
+}
+
+/* Meditaciones Grid */
+.meditaciones-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-3xl);
+}
+
+.meditacion-card {
+  text-align: center;
+  padding: var(--spacing-xl);
+  position: relative;
+}
+
+.meditacion-icon {
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.meditacion-duration {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: var(--color-beige);
+  border-radius: var(--radius-full);
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  margin-bottom: var(--spacing-md);
+}
+
+.meditacion-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-text-dark);
+}
+
+.meditacion-card p {
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  line-height: 1.6;
+  margin-bottom: var(--spacing-lg);
+}
+
+.meditacion-card .btn-ghost {
+  color: var(--color-primary);
+}
+
+.meditacion-card .btn-ghost:hover {
+  background: var(--color-beige);
+}
+
+.play-icon {
+  font-size: 0.7rem;
+  margin-left: 0.25rem;
+}
+
+/* Tips Grid */
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-3xl);
+}
+
+.tip-item {
+  text-align: center;
+  padding: var(--spacing-xl);
+}
+
+.tip-icon {
+  font-size: 2rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.tip-item h3 {
+  font-size: 1.1rem;
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-text-dark);
+}
+
+.tip-item p {
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .meditaciones-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tips-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .meditaciones-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tips-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-buttons .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}

@@ -1,0 +1,338 @@
+/* ============================================
+   ACOMPAÑAMIENTO HOLÍSTICO - DISEÑO EDITORIAL
+   ============================================ */
+
+/* Service Hero */
+.service-hero {
+  position: relative;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  padding: var(--spacing-5xl) 0;
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--color-cream) 0%, var(--color-beige-light) 100%);
+}
+
+.service-hero .hero-content {
+  max-width: 700px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.service-hero .hero-title {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  margin-bottom: var(--spacing-xl);
+}
+
+.service-hero .hero-subtitle {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto var(--spacing-2xl);
+}
+
+.service-hero .btn {
+  margin-top: var(--spacing-lg);
+}
+
+/* Intro Section */
+.intro-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: var(--spacing-4xl);
+  align-items: center;
+}
+
+.intro-content .section-tag {
+  text-align: left;
+  display: block;
+  margin-bottom: var(--spacing-md);
+}
+
+.intro-content h2 {
+  font-size: 2rem;
+  margin-bottom: var(--spacing-lg);
+  text-align: left;
+}
+
+.intro-content p {
+  font-size: 1.05rem;
+  color: var(--color-text-light);
+  line-height: 1.8;
+  margin-bottom: var(--spacing-lg);
+}
+
+.intro-image {
+  display: flex;
+  justify-content: center;
+}
+
+.intro-image-frame {
+  position: relative;
+}
+
+.intro-image-placeholder {
+  width: 350px;
+  height: 420px;
+  border-radius: var(--radius-organic);
+  background: linear-gradient(135deg, var(--color-sage-light) 0%, var(--color-beige) 50%, var(--color-terracotta-light) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: var(--shadow-xl);
+}
+
+.intro-icon {
+  font-size: 8rem;
+  opacity: 0.5;
+}
+
+/* Pilares Grid */
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-3xl);
+}
+
+.pillar-card {
+  text-align: center;
+  padding: var(--spacing-2xl);
+}
+
+.pillar-number {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: var(--color-beige-dark);
+  margin-bottom: var(--spacing-md);
+  line-height: 1;
+}
+
+.pillar-icon {
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-lg);
+}
+
+.pillar-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text-dark);
+}
+
+.pillar-card p {
+  font-size: 0.95rem;
+  color: var(--color-text-light);
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+/* Metodología */
+.methodology-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-3xl);
+}
+
+.method-card {
+  text-align: center;
+}
+
+.method-step {
+  padding: var(--spacing-xl);
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-base);
+}
+
+.method-step:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.method-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-terracotta) 100%);
+  color: var(--color-white);
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: var(--spacing-lg);
+}
+
+.method-step h3 {
+  font-size: 1.1rem;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text-dark);
+}
+
+.method-step p {
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* Herramientas Grid */
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-3xl);
+}
+
+.tool-item {
+  text-align: center;
+  padding: var(--spacing-xl);
+}
+
+.tool-icon {
+  font-size: 2rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.tool-item h3 {
+  font-size: 1.1rem;
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-text-dark);
+}
+
+.tool-item p {
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* CTA Section */
+.cta-section {
+  position: relative;
+  padding: var(--spacing-5xl) 0;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  overflow: hidden;
+}
+
+.cta-content {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.cta-tagline {
+  display: inline-block;
+  font-family: var(--font-script);
+  font-size: 1.5rem;
+  color: var(--color-terracotta-light);
+  margin-bottom: var(--spacing-lg);
+  font-style: italic;
+}
+
+.cta-title {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 400;
+  color: var(--color-white);
+  margin-bottom: var(--spacing-xl);
+  line-height: 1.3;
+}
+
+.cta-text {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.8;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.cta-buttons {
+  display: flex;
+  gap: var(--spacing-lg);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-content .btn-primary {
+  background-color: var(--color-white);
+  color: var(--color-primary-dark);
+}
+
+.cta-content .btn-primary:hover {
+  background-color: var(--color-cream);
+  transform: translateY(-2px);
+}
+
+.cta-content .btn-outline {
+  border-color: var(--color-white);
+  color: var(--color-white);
+}
+
+.cta-content .btn-outline:hover {
+  background-color: var(--color-white);
+  color: var(--color-primary-dark);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .pillars-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .methodology-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 968px) {
+  .intro-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .intro-content .section-tag {
+    text-align: center;
+  }
+
+  .intro-content h2 {
+    text-align: center;
+  }
+
+  .intro-image {
+    order: -1;
+  }
+
+  .intro-image-placeholder {
+    width: 280px;
+    height: 340px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pillars-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .methodology-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tools-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-buttons .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}

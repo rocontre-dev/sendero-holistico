@@ -1,0 +1,106 @@
+/* ============================================
+   FLOATING WHATSAPP BUTTON - DISEÑO PREMIUM
+   ============================================ */
+
+.floating-whatsapp-button {
+  position: fixed;
+  bottom: 80px; /* Above the reserve button */
+  right: 24px;
+  z-index: 1000;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #25D366;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+  
+  /* Subtle breathing animation */
+  animation: whatsapp-breathe 4s ease-in-out infinite;
+}
+
+.floating-whatsapp-button:hover {
+  background-color: #128C7E;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 30px rgba(37, 211, 102, 0.5);
+}
+
+.floating-whatsapp-button:active {
+  transform: translateY(-1px) scale(0.98);
+}
+
+.floating-whatsapp-button:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
+/* Icon */
+.whatsapp-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.floating-whatsapp-button:hover .whatsapp-icon {
+  transform: scale(1.1);
+}
+
+/* Visibility states */
+.floating-whatsapp-button.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.floating-whatsapp-button.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+}
+
+/* Breathing animation */
+@keyframes whatsapp-breathe {
+  0%, 100% {
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+  }
+  50% {
+    box-shadow: 0 4px 30px rgba(37, 211, 102, 0.6);
+  }
+}
+
+/* ============================================
+   RESPONSIVE - MOBILE
+   ============================================ */
+@media (max-width: 768px) {
+  .floating-whatsapp-button {
+    bottom: 90px; /* Above the reserve button on mobile */
+    right: 16px;
+    width: 52px;
+    height: 52px;
+  }
+}
+
+@media (max-width: 480px) {
+  .floating-whatsapp-button {
+    bottom: 85px;
+    right: 12px;
+    width: 48px;
+    height: 48px;
+  }
+}
+
+/* ============================================
+   ACCESSIBILITY - Reduced Motion
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+  .floating-whatsapp-button {
+    animation: none;
+  }
+}

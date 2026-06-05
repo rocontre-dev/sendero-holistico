@@ -1,0 +1,527 @@
+/* ============================================
+   FUENTES - Cargar desde Google Fonts
+   ============================================ */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&family=Great+Vibes&display=swap');
+
+/* ============================================
+   SENDERO HOLÍSTICO - NUEVO DISEÑO EDITORIAL
+   ============================================ */
+
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* ============================================
+     PALETA DE COLORES NATURAL Y TERROSA
+     ============================================ */
+  /* Colores principales - tonos tierra cálidos */
+  --color-primary: #8B7355;
+  --color-primary-light: #A8927A;
+  --color-primary-dark: #6B5744;
+  --color-primary-muted: #9C8B7A;
+  
+  /* Tonos beige y arena */
+  --color-beige: #F5F0EB;
+  --color-beige-light: #FAF8F5;
+  --color-beige-dark: #E8E0D8;
+  --color-sand: #D4C4B0;
+  --color-cream: #FDFBF9;
+  
+  /* Tonos café suave */
+  --color-brown-light: #C4A882;
+  --color-brown: #8B7355;
+  --color-brown-dark: #5C4A3A;
+  
+  /* Tonos verde salvia/oliva apagado */
+  --color-sage: #9CAF88;
+  --color-sage-light: #B8C5A8;
+  --color-sage-dark: #7A8B6A;
+  --color-olive: #8A9A6B;
+  
+  /* Tonos terracota suave */
+  --color-terracotta: #C4956A;
+  --color-terracotta-light: #D4A87A;
+  --color-terracotta-dark: #A87850;
+  
+  /* Colores de texto */
+  --color-text: #4A4038;
+  --color-text-light: #6B5F55;
+  --color-text-muted: #8B7E74;
+  --color-text-dark: #2D2620;
+  
+  /* Blanco y negro suave */
+  --color-white: #FFFFFF;
+  --color-off-white: #FAF8F5;
+  --color-black: #2D2620;
+  --color-black-soft: #4A4038;
+  
+  /* ============================================
+     TIPOGRAFÍA
+     ============================================ */
+  /* Serif elegante para títulos */
+  --font-heading: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+  
+  /* Sans-serif limpia para textos */
+  --font-body: 'Inter', 'Open Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  
+  /* Script manuscrito para acentos */
+  --font-script: 'Great Vibes', 'Dancing Script', cursive;
+  
+  /* ============================================
+     SOMBRAS SUAVES Y ORGÁNICAS
+     ============================================ */
+  --shadow-xs: 0 1px 3px rgba(74, 64, 56, 0.06);
+  --shadow-sm: 0 2px 8px rgba(74, 64, 56, 0.08);
+  --shadow-md: 0 4px 16px rgba(74, 64, 56, 0.1);
+  --shadow-lg: 0 8px 32px rgba(74, 64, 56, 0.12);
+  --shadow-xl: 0 16px 48px rgba(74, 64, 56, 0.15);
+  --shadow-soft: 0 4px 20px rgba(139, 115, 85, 0.1);
+  
+  /* ============================================
+     BORDES Y RADII
+     ============================================ */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+  --radius-organic: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  
+  /* ============================================
+     TRANSICIONES
+     ============================================ */
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.3s ease;
+  --transition-slow: 0.5s ease;
+  --transition-slower: 0.8s ease;
+  
+  /* ============================================
+     ESPACIADO
+     ============================================ */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  --spacing-3xl: 4rem;
+  --spacing-4xl: 6rem;
+  --spacing-5xl: 8rem;
+}
+
+/* ============================================
+   BASE
+   ============================================ */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--color-text);
+  background-color: var(--color-cream);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* ============================================
+   TIPOGRAFÍA
+   ============================================ */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--color-text-dark);
+  letter-spacing: 0.02em;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 400;
+}
+
+h3 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+p {
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+/* Texto script para acentos */
+.script-accent {
+  font-family: var(--font-script);
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  font-style: italic;
+}
+
+/* ============================================
+   ENLACES
+   ============================================ */
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: var(--transition-base);
+  position: relative;
+}
+
+a:hover {
+  color: var(--color-primary-dark);
+}
+
+/* ============================================
+   BOTONES
+   ============================================ */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.875rem 2rem;
+  border-radius: var(--radius-md);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: var(--transition-base);
+  cursor: pointer;
+  border: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-dark);
+  color: var(--color-white);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-secondary {
+  background-color: var(--color-sage);
+  color: var(--color-white);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-sage-dark);
+  color: var(--color-white);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 1.5px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+.btn-outline:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  transform: translateY(-2px);
+}
+
+.btn-ghost {
+  background-color: transparent;
+  color: var(--color-primary);
+  padding: 0.5rem 1rem;
+}
+
+.btn-ghost:hover {
+  background-color: var(--color-beige);
+  color: var(--color-primary-dark);
+}
+
+.btn-large {
+  padding: 1rem 2.5rem;
+  font-size: 1rem;
+}
+
+.btn-small {
+  padding: 0.5rem 1.25rem;
+  font-size: 0.85rem;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+/* ============================================
+   CONTENEDORES
+   ============================================ */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.container-narrow {
+  max-width: 800px;
+}
+
+.container-wide {
+  max-width: 1400px;
+}
+
+/* ============================================
+   SECCIONES
+   ============================================ */
+.section {
+  padding: var(--spacing-4xl) 0;
+}
+
+.section-alt {
+  background-color: var(--color-beige);
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+  color: var(--color-text-dark);
+  position: relative;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--color-text-muted);
+  max-width: 600px;
+  margin: 0 auto var(--spacing-3xl);
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* Decoración de título */
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-terracotta));
+  margin: var(--spacing-lg) auto 0;
+}
+
+/* ============================================
+   TARJETAS
+   ============================================ */
+.card {
+  background-color: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-xl);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-base);
+  border: 1px solid rgba(139, 115, 85, 0.08);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.card-soft {
+  background-color: var(--color-white);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-xl);
+  box-shadow: var(--shadow-soft);
+  transition: var(--transition-slow);
+}
+
+.card-soft:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-xl);
+}
+
+/* ============================================
+   UTILIDADES DE COLOR
+   ============================================ */
+.text-primary { color: var(--color-primary); }
+.text-sage { color: var(--color-sage); }
+.text-muted { color: var(--color-text-muted); }
+.text-dark { color: var(--color-text-dark); }
+.text-light { color: var(--color-text-light); }
+
+.bg-cream { background-color: var(--color-cream); }
+.bg-beige { background-color: var(--color-beige); }
+.bg-white { background-color: var(--color-white); }
+
+/* ============================================
+   ANIMACIONES
+   ============================================ */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(2deg);
+  }
+}
+
+@keyframes breathe {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: floatSlow 8s ease-in-out infinite;
+}
+
+.animate-breathe {
+  animation: breathe 4s ease-in-out infinite;
+}
+
+/* ============================================
+   FORMAS ORGÁNICAS
+   ============================================ */
+.blob {
+  border-radius: var(--radius-organic);
+  transition: var(--transition-slow);
+}
+
+.blob:hover {
+  border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%;
+}
+
+/* Separador curvo */
+.curve-separator {
+  width: 100%;
+  height: 80px;
+  background: var(--color-beige);
+  position: relative;
+  overflow: hidden;
+}
+
+.curve-separator svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 768px) {
+  :root {
+    --spacing-4xl: 4rem;
+    --spacing-5xl: 6rem;
+  }
+  
+  body {
+    font-size: 15px;
+  }
+  
+  .container {
+    padding: 0 1rem;
+  }
+  
+  .section {
+    padding: var(--spacing-3xl) 0;
+  }
+}
+
+/* ============================================
+   ACCESIBILIDAD
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Focus visible */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Selection */
+::selection {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}

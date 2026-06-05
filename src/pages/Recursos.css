@@ -1,0 +1,324 @@
+.recursos-hero {
+  background: linear-gradient(135deg, var(--color-background) 0%, var(--color-background-alt) 100%);
+  padding: 5rem 0 4rem;
+  text-align: center;
+}
+
+.recursos-hero .section-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.recursos-hero .section-subtitle {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+  color: var(--color-text-light);
+  line-height: 1.8;
+}
+
+/* Intro Section */
+.intro-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.intro-text {
+  color: var(--color-text-light);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.intro-text:last-child {
+  margin-bottom: 0;
+}
+
+/* Resource Sections */
+.resource-section {
+  padding: 5rem 0;
+}
+
+.resource-section.alt-bg {
+  background-color: var(--color-background-alt);
+}
+
+.resource-section .section-title {
+  margin-bottom: 0.5rem;
+}
+
+.resource-section .section-subtitle {
+  color: var(--color-text-light);
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Resource Grid - Standard Cards */
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.resource-card {
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resource-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.resource-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-background-alt);
+  border-radius: 50%;
+  color: var(--color-primary);
+}
+
+.resource-card h3 {
+  color: var(--color-primary-dark);
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.resource-description {
+  color: var(--color-text-light);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+}
+
+/* Resource Badge */
+.resource-badge {
+  display: inline-block;
+  background-color: var(--color-primary-light);
+  color: var(--color-white);
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Resource Steps */
+.resource-steps {
+  background-color: var(--color-background);
+  padding: 1.25rem;
+  border-radius: var(--radius-md);
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.resource-steps h4 {
+  color: var(--color-primary);
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.resource-steps ol,
+.resource-steps ul {
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+.resource-steps li {
+  margin-bottom: 0.4rem;
+  color: var(--color-text-light);
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.resource-steps ul li {
+  list-style-type: disc;
+}
+
+.resource-steps strong {
+  color: var(--color-primary-dark);
+  font-weight: 600;
+}
+
+/* Placeholder */
+.resource-placeholder {
+  background: linear-gradient(135deg, var(--color-background-alt) 0%, var(--color-background) 100%);
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-full);
+  display: inline-block;
+}
+
+.resource-placeholder span {
+  color: var(--color-primary);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.resource-placeholder.small {
+  padding: 0.5rem 1rem;
+}
+
+.resource-placeholder.small span {
+  font-size: 0.7rem;
+}
+
+/* Reflections Grid */
+.reflections-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.reflection-card {
+  padding: 2rem;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reflection-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.reflection-category {
+  display: inline-block;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--color-primary);
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.reflection-card h3 {
+  color: var(--color-primary-dark);
+  font-size: 1.15rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.4;
+}
+
+.reflection-excerpt {
+  color: var(--color-text-light);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+}
+
+/* Free Resources Grid */
+.free-resources-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.free-resource-card {
+  padding: 2.5rem 2rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.free-resource-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.free-resource-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-background);
+  border-radius: 50%;
+  color: var(--color-primary);
+}
+
+.free-resource-card h3 {
+  color: var(--color-primary-dark);
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+/* CTA Section */
+.cta-section {
+  padding: 5rem 0;
+}
+
+.cta-content {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 3rem;
+}
+
+.cta-content h2 {
+  margin-bottom: 1rem;
+  color: var(--color-primary-dark);
+}
+
+.cta-content p {
+  color: var(--color-text-light);
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .resources-grid,
+  .reflections-grid,
+  .free-resources-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .recursos-hero {
+    padding: 4rem 0 3rem;
+  }
+
+  .recursos-hero .section-title {
+    font-size: 2rem;
+  }
+
+  .recursos-hero .section-subtitle {
+    font-size: 1.05rem;
+  }
+
+  .resource-section,
+  .cta-section {
+    padding: 4rem 0;
+  }
+
+  .resources-grid,
+  .reflections-grid,
+  .free-resources-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .resource-card,
+  .reflection-card,
+  .free-resource-card {
+    padding: 1.75rem;
+  }
+
+  .cta-content {
+    padding: 2rem 1.5rem;
+  }
+}

@@ -1,0 +1,236 @@
+.terapia-hero {
+  background: linear-gradient(135deg, var(--color-background) 0%, var(--color-background-alt) 100%);
+  padding: 4rem 0 3rem;
+  text-align: center;
+}
+
+.terapia-intro {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.intro-image-placeholder {
+  width: 100%;
+  max-width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-primary-light) 0%, var(--color-secondary-light) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  animation: float 6s ease-in-out infinite;
+}
+
+.intro-icon {
+  font-size: 8rem;
+}
+
+.intro-content h2 {
+  font-size: 2rem;
+  color: var(--color-primary-dark);
+  margin-bottom: 1.5rem;
+}
+
+.intro-content p {
+  color: var(--color-text-light);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+/* Principles Section */
+.principles-section {
+  background-color: var(--color-background-alt);
+}
+
+.principles-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.principle-card {
+  text-align: center;
+  padding: 2rem;
+}
+
+.principle-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.principle-card h3 {
+  color: var(--color-primary-dark);
+  margin-bottom: 0.75rem;
+}
+
+.principle-card p {
+  color: var(--color-text-muted);
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
+
+/* Benefits TS Section */
+.benefits-ts-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.benefit-ts-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.benefit-ts-icon {
+  width: 30px;
+  height: 30px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-weight: bold;
+}
+
+.benefit-ts-content h3 {
+  color: var(--color-primary-dark);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.benefit-ts-content p {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 0;
+}
+
+/* Expectations TS Section */
+.expectations-ts-section {
+  background-color: var(--color-background-alt);
+}
+
+.expectations-ts-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.expectation-ts-card {
+  position: relative;
+  padding-left: 4rem;
+}
+
+.expectation-ts-number {
+  position: absolute;
+  left: 1.5rem;
+  top: 1.5rem;
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.expectation-ts-card h3 {
+  color: var(--color-primary-dark);
+  margin-bottom: 0.75rem;
+}
+
+.expectation-ts-card p {
+  color: var(--color-text-muted);
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
+
+/* Techniques TS Section */
+.techniques-ts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.technique-ts-item {
+  background-color: var(--color-white);
+  padding: 1.5rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.technique-ts-item h3 {
+  color: var(--color-primary-dark);
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.technique-ts-item p {
+  color: var(--color-text-muted);
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
+
+/* FAQ */
+.faq-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.faq-item {
+  padding: 1.5rem;
+}
+
+.faq-item h3 {
+  color: var(--color-primary-dark);
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.faq-item p {
+  color: var(--color-text-muted);
+  margin-bottom: 0;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* CTA */
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .terapia-intro {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .intro-content h2 {
+    text-align: center;
+  }
+
+  .principles-grid,
+  .benefits-ts-grid,
+  .expectations-ts-grid,
+  .faq-list {
+    grid-template-columns: 1fr;
+  }
+
+  .techniques-ts-grid {
+    grid-template-columns: 1fr;
+  }
+}

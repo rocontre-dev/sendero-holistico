@@ -1,0 +1,175 @@
+/* ============================================
+   SERENIDAD - DISEÑO EDITORIAL HOLÍSTICO
+   ============================================ */
+
+/* Session Info Badges */
+.session-info {
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: center;
+  margin-bottom: var(--spacing-2xl);
+  flex-wrap: wrap;
+}
+
+.info-badge {
+  display: inline-block;
+  padding: 0.5rem 1.25rem;
+  background: var(--color-beige);
+  border-radius: var(--radius-full);
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+  letter-spacing: 0.03em;
+}
+
+/* Benefits Grid */
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-3xl);
+}
+
+.benefit-card {
+  text-align: center;
+  padding: var(--spacing-xl);
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-base);
+}
+
+.benefit-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.benefit-icon {
+  font-size: 2rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.benefit-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-text-dark);
+}
+
+.benefit-card p {
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* Techniques Grid */
+.techniques-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-3xl);
+}
+
+.technique-card {
+  text-align: center;
+  padding: var(--spacing-xl);
+}
+
+.technique-icon {
+  font-size: 2rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.technique-card h3 {
+  font-size: 1.15rem;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text-dark);
+}
+
+.technique-card p {
+  font-size: 0.95rem;
+  color: var(--color-text-light);
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+/* For You Grid */
+.for-you-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-3xl);
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.for-you-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-lg);
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-xs);
+  transition: var(--transition-base);
+}
+
+.for-you-item:hover {
+  transform: translateX(8px);
+  box-shadow: var(--shadow-sm);
+}
+
+.check-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-sage) 0%, var(--color-sage-dark) 100%);
+  color: var(--color-white);
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+.for-you-item p {
+  font-size: 0.95rem;
+  color: var(--color-text);
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .techniques-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .techniques-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .for-you-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-buttons .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}

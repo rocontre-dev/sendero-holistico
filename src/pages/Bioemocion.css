@@ -1,0 +1,117 @@
+/* ============================================
+   BIOEMOCIÓN ENERGÉTICA - DISEÑO EDITORIAL
+   ============================================ */
+
+/* Dimensions Grid */
+.dimensions-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-3xl);
+}
+
+.dimension-card {
+  text-align: center;
+  padding: var(--spacing-xl);
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-base);
+}
+
+.dimension-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.dimension-icon {
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-lg);
+}
+
+.dimension-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text-dark);
+}
+
+.dimension-card p {
+  font-size: 0.95rem;
+  color: var(--color-text-light);
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+/* For You Grid */
+.for-you-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-3xl);
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.for-you-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-lg);
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-xs);
+  transition: var(--transition-base);
+}
+
+.for-you-item:hover {
+  transform: translateX(8px);
+  box-shadow: var(--shadow-sm);
+}
+
+.check-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-sage) 0%, var(--color-sage-dark) 100%);
+  color: var(--color-white);
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+.for-you-item p {
+  font-size: 0.95rem;
+  color: var(--color-text);
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .dimensions-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .dimensions-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .for-you-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-buttons .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}

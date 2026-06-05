@@ -1,0 +1,242 @@
+.diseno-hero {
+  background: linear-gradient(135deg, var(--color-background) 0%, var(--color-background-alt) 100%);
+  padding: 4rem 0 3rem;
+  text-align: center;
+}
+
+.diseno-intro {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.intro-image-placeholder {
+  width: 100%;
+  max-width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-secondary-light) 0%, var(--color-primary-light) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  animation: float 6s ease-in-out infinite;
+}
+
+.intro-icon {
+  font-size: 8rem;
+}
+
+.intro-content h2 {
+  font-size: 2rem;
+  color: var(--color-primary-dark);
+  margin-bottom: 1.5rem;
+}
+
+.intro-content p {
+  color: var(--color-text-light);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+/* Components Section */
+.components-section {
+  background-color: var(--color-background-alt);
+}
+
+.components-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.component-card {
+  text-align: center;
+  padding: 2rem;
+}
+
+.component-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.component-card h3 {
+  color: var(--color-primary-dark);
+  margin-bottom: 0.75rem;
+}
+
+.component-card p {
+  color: var(--color-text-muted);
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
+
+/* Types Section */
+.types-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.type-card {
+  padding: 2rem;
+  text-align: center;
+}
+
+.type-percentage {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+
+.type-card h3 {
+  color: var(--color-primary-dark);
+  margin-bottom: 0.75rem;
+}
+
+.type-description {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 0;
+}
+
+.highlight-type {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+}
+
+.highlight-type .type-percentage,
+.highlight-type h3 {
+  color: var(--color-white);
+}
+
+.highlight-type .type-description {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Benefits DH Section */
+.benefits-dh-section {
+  background-color: var(--color-background-alt);
+}
+
+.benefits-dh-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.benefit-dh-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.benefit-dh-icon {
+  width: 30px;
+  height: 30px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-weight: bold;
+}
+
+.benefit-dh-content h3 {
+  color: var(--color-primary-dark);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.benefit-dh-content p {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 0;
+}
+
+/* Session Info Section */
+.session-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.session-info-card {
+  text-align: center;
+  padding: 2rem;
+}
+
+.session-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.session-info-card h3 {
+  color: var(--color-primary-dark);
+  margin-bottom: 0.75rem;
+}
+
+.session-info-card p {
+  color: var(--color-text-muted);
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
+
+/* FAQ */
+.faq-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.faq-item {
+  padding: 1.5rem;
+}
+
+.faq-item h3 {
+  color: var(--color-primary-dark);
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.faq-item p {
+  color: var(--color-text-muted);
+  margin-bottom: 0;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* CTA */
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .diseno-intro {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .intro-content h2 {
+    text-align: center;
+  }
+
+  .components-grid,
+  .types-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .benefits-dh-grid,
+  .session-info-grid,
+  .faq-list {
+    grid-template-columns: 1fr;
+  }
+}

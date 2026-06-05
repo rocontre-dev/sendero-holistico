@@ -1,0 +1,272 @@
+.about-hero {
+  background: linear-gradient(135deg, var(--color-background) 0%, var(--color-background-alt) 100%);
+  padding: 5rem 0 3rem;
+  text-align: center;
+}
+
+/* Hero Quote - Rumi */
+.about-hero .hero-quote {
+  display: block;
+  font-family: var(--font-script);
+  font-size: 1.3rem;
+  color: var(--color-text-muted);
+  font-style: italic;
+  margin-bottom: var(--spacing-xl);
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+  padding-left: var(--spacing-lg);
+  border-left: 2px solid var(--color-primary);
+  opacity: 0.8;
+  text-align: left;
+}
+
+.about-hero .hero-quote cite {
+  display: block;
+  margin-top: var(--spacing-sm);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--color-primary);
+  font-style: normal;
+  letter-spacing: 0.05em;
+}
+
+.about-content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.about-image-placeholder-large {
+  width: 100%;
+  max-width: 350px;
+  height: 450px;
+  border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, var(--color-secondary-light) 0%, var(--color-primary-light) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.about-icon-large {
+  font-size: 10rem;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-primary-dark);
+}
+
+.about-text p {
+  color: var(--color-text-light);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+/* Journey Section */
+.journey-section {
+  background-color: var(--color-background-alt);
+}
+
+.journey-timeline {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.journey-timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, var(--color-primary-light), var(--color-secondary-light));
+}
+
+.journey-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.journey-item:nth-child(odd) {
+  direction: rtl;
+}
+
+.journey-item:nth-child(odd) > * {
+  direction: ltr;
+}
+
+.journey-year {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  text-align: right;
+  padding-top: 1rem;
+}
+
+.journey-item:nth-child(even) .journey-year {
+  text-align: left;
+}
+
+.journey-content {
+  padding: 1.5rem;
+  position: relative;
+}
+
+.journey-content::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 12px;
+  height: 12px;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  border: 3px solid var(--color-white);
+}
+
+.journey-item:nth-child(odd) .journey-content::before {
+  left: -56px;
+}
+
+.journey-item:nth-child(even) .journey-content::before {
+  right: -56px;
+}
+
+.journey-content h3 {
+  color: var(--color-primary-dark);
+  margin-bottom: 0.5rem;
+}
+
+.journey-content p {
+  margin-bottom: 0;
+  color: var(--color-text-muted);
+}
+
+/* Approach Section */
+.approach-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.approach-card {
+  text-align: center;
+  padding: 2rem;
+}
+
+.approach-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.approach-card h3 {
+  color: var(--color-primary-dark);
+  margin-bottom: 0.75rem;
+}
+
+.approach-card p {
+  color: var(--color-text-muted);
+  margin-bottom: 0;
+}
+
+/* Credentials Section */
+.credentials-section {
+  background-color: var(--color-background-alt);
+}
+
+.credentials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.credential-item {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.credential-item h3 {
+  color: var(--color-primary-dark);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.credential-item p {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+/* CTA Buttons */
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .about-content-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about-image-placeholder-large {
+    height: 300px;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  .about-text h2 {
+    text-align: center;
+  }
+
+  .journey-timeline::before {
+    left: 20px;
+  }
+
+  .journey-item {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .journey-item:nth-child(odd) {
+    direction: ltr;
+  }
+
+  .journey-year {
+    text-align: left !important;
+    padding-left: 40px;
+  }
+
+  .journey-content::before {
+    left: 14px !important;
+    right: auto !important;
+  }
+
+  .approach-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .credentials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .credentials-grid {
+    grid-template-columns: 1fr;
+  }
+}

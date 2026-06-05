@@ -1,0 +1,150 @@
+/* ============================================
+   FLOATING RESERVE BUTTON - DISEÑO PREMIUM
+   ============================================ */
+
+.floating-reserve-button {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 24px;
+  background: linear-gradient(135deg, var(--color-sage) 0%, var(--color-sage-dark) 100%);
+  color: var(--color-white);
+  border-radius: var(--radius-full);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  box-shadow: 0 4px 20px rgba(124, 156, 136, 0.4);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  
+  /* Subtle breathing animation */
+  animation: breathe-glow 4s ease-in-out infinite;
+}
+
+.floating-reserve-button:hover {
+  background: linear-gradient(135deg, var(--color-sage-dark) 0%, var(--color-primary-dark) 100%);
+  color: var(--color-white);
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 8px 30px rgba(124, 156, 136, 0.5);
+}
+
+.floating-reserve-button:active {
+  transform: translateY(-1px) scale(0.98);
+}
+
+.floating-reserve-button:focus-visible {
+  outline: 2px solid var(--color-white);
+  outline-offset: 2px;
+}
+
+/* Icon */
+.floating-reserve-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.floating-reserve-icon svg {
+  transition: transform 0.3s ease;
+}
+
+.floating-reserve-button:hover .floating-reserve-icon svg {
+  transform: scale(1.1);
+}
+
+/* Text */
+.floating-reserve-text {
+  white-space: nowrap;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.reserve-text-desktop {
+  display: inline;
+}
+
+.reserve-text-mobile {
+  display: none;
+}
+
+/* Visibility states */
+.floating-reserve-button.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.floating-reserve-button.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+}
+
+/* Breathing glow animation */
+@keyframes breathe-glow {
+  0%, 100% {
+    box-shadow: 0 4px 20px rgba(124, 156, 136, 0.4);
+  }
+  50% {
+    box-shadow: 0 4px 30px rgba(124, 156, 136, 0.6);
+  }
+}
+
+/* ============================================
+   RESPONSIVE - MOBILE
+   ============================================ */
+@media (max-width: 768px) {
+  .floating-reserve-button {
+    bottom: 16px;
+    right: 16px;
+    left: 16px;
+    justify-content: center;
+    padding: 16px 24px;
+    border-radius: var(--radius-lg);
+    font-size: 0.95rem;
+    box-shadow: 0 4px 24px rgba(124, 156, 136, 0.5);
+  }
+  
+  .floating-reserve-button:hover {
+    transform: translateY(-2px) scale(1);
+  }
+  
+  .floating-reserve-text {
+    font-size: 0.95rem;
+  }
+
+  .reserve-text-desktop {
+    display: none;
+  }
+
+  .reserve-text-mobile {
+    display: inline;
+  }
+}
+
+@media (max-width: 480px) {
+  .floating-reserve-button {
+    bottom: 12px;
+    right: 12px;
+    left: 12px;
+    padding: 14px 20px;
+  }
+}
+
+/* ============================================
+   ACCESSIBILITY - Reduced Motion
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+  .floating-reserve-button {
+    animation: none;
+  }
+}

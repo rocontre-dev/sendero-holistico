@@ -1,0 +1,197 @@
+.bioenergia-hero {
+  background: linear-gradient(135deg, var(--color-background) 0%, var(--color-background-alt) 100%);
+  padding: 4rem 0 3rem;
+  text-align: center;
+}
+
+.bioenergia-intro {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.intro-content h2 {
+  font-size: 2rem;
+  color: var(--color-primary-dark);
+  margin-bottom: 1.5rem;
+}
+
+.intro-content p {
+  color: var(--color-text-light);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.intro-image-placeholder {
+  width: 100%;
+  max-width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-primary-light) 0%, var(--color-secondary-light) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  animation: float 6s ease-in-out infinite;
+}
+
+.intro-icon {
+  font-size: 8rem;
+}
+
+/* Benefits Section */
+.benefits-section {
+  background-color: var(--color-background-alt);
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.benefit-card {
+  text-align: center;
+  padding: 2rem;
+}
+
+.benefit-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.benefit-card h3 {
+  color: var(--color-primary-dark);
+  margin-bottom: 0.75rem;
+}
+
+.benefit-card p {
+  color: var(--color-text-muted);
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
+
+/* Expectations Section */
+.expectations-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.expectation-card {
+  position: relative;
+  padding-left: 4rem;
+}
+
+.expectation-number {
+  position: absolute;
+  left: 1.5rem;
+  top: 1.5rem;
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.expectation-card h3 {
+  color: var(--color-primary-dark);
+  margin-bottom: 0.75rem;
+}
+
+.expectation-card p {
+  color: var(--color-text-muted);
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
+
+/* Techniques Section */
+.techniques-section {
+  background-color: var(--color-background-alt);
+}
+
+.techniques-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.technique-item {
+  background-color: var(--color-white);
+  padding: 1.5rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.technique-item h3 {
+  color: var(--color-primary-dark);
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.technique-item p {
+  color: var(--color-text-muted);
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
+
+/* FAQ Section */
+.faq-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.faq-item {
+  padding: 1.5rem;
+}
+
+.faq-item h3 {
+  color: var(--color-primary-dark);
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.faq-item p {
+  color: var(--color-text-muted);
+  margin-bottom: 0;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* CTA Buttons */
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .bioenergia-intro {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .intro-content h2 {
+    text-align: center;
+  }
+
+  .benefits-grid,
+  .techniques-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .expectations-grid,
+  .faq-list {
+    grid-template-columns: 1fr;
+  }
+}
