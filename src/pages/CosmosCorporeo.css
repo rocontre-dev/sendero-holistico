@@ -2,6 +2,112 @@
    COSMOS CORPÓREO - DISEÑO EDITORIAL
    ============================================ */
 
+/* Hero Section - Override background for image */
+.cosmos-corporeo-page .service-hero {
+  background: none;
+}
+
+/* Hero Image Background */
+.service-hero .hero-background .hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.service-hero .hero-background .hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.65),
+    rgba(0, 0, 0, 0.45),
+    rgba(0, 0, 0, 0.30)
+  );
+  z-index: 1;
+}
+
+.service-hero .hero-background .hero-blob {
+  z-index: 2;
+}
+
+.service-hero .hero-content {
+  position: relative;
+  z-index: 3;
+}
+
+/* Hero Content Typography - Improved Readability */
+.service-hero .hero-content .hero-title {
+  color: #F8F4EC;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.service-hero .hero-content .hero-subtitle {
+  color: rgba(255, 255, 255, 0.92);
+  line-height: 1.7;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
+}
+
+.service-hero .hero-content .session-info {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.service-hero .hero-content .info-badge {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.service-hero .hero-content .btn-primary {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* Section tag in hero - ensure visibility */
+.service-hero .hero-content .section-tag {
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Intro Image Frame with Real Image */
+.intro-image-frame {
+  width: 350px;
+  height: 420px;
+  border-radius: var(--radius-organic);
+  overflow: hidden;
+  box-shadow: var(--shadow-xl);
+}
+
+.intro-image-real {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Responsive for intro image */
+@media (max-width: 968px) {
+  .intro-image-frame {
+    width: 280px;
+    height: 340px;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro-image-frame {
+    width: 250px;
+    height: 300px;
+  }
+}
+
 /* Component Cards */
 .components-grid {
   display: grid;

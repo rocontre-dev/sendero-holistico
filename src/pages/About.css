@@ -1,15 +1,51 @@
+/* About Hero - Full width with background image */
 .about-hero {
-  background: linear-gradient(135deg, var(--color-background) 0%, var(--color-background-alt) 100%);
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 5rem 0 3rem;
-  text-align: center;
+  background: none;
 }
 
-/* Hero Quote - Rumi */
+.about-hero .hero-background {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.about-hero .hero-background .hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.about-hero .hero-background .hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(20, 20, 20, 0.65) 0%,
+    rgba(20, 20, 20, 0.45) 35%,
+    rgba(20, 20, 20, 0.20) 100%
+  );
+}
+
+/* Hero Quote - Rumi - Updated for image background */
 .about-hero .hero-quote {
   display: block;
   font-family: var(--font-script);
   font-size: 1.3rem;
-  color: var(--color-text-muted);
+  color: rgba(255, 255, 255, 0.85);
   font-style: italic;
   margin-bottom: var(--spacing-xl);
   max-width: 420px;
@@ -17,9 +53,9 @@
   margin-right: auto;
   line-height: 1.6;
   padding-left: var(--spacing-lg);
-  border-left: 2px solid var(--color-primary);
-  opacity: 0.8;
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
   text-align: left;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 }
 
 .about-hero .hero-quote cite {
@@ -27,32 +63,41 @@
   margin-top: var(--spacing-sm);
   font-family: var(--font-body);
   font-size: 1rem;
-  color: var(--color-primary);
+  color: rgba(255, 255, 255, 0.9);
   font-style: normal;
   letter-spacing: 0.05em;
 }
 
+/* Section title and subtitle - Updated for image background */
+.about-hero .section-title {
+  color: #F8F4EC;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.about-hero .section-subtitle {
+  color: rgba(255, 255, 255, 0.92);
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* About Intro Section - Block 1 */
+.about-intro-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.container-wide {
+  max-width: 1400px;
+  padding: 0 8vw;
+}
+
 .about-content-grid {
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  gap: 4rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
   align-items: center;
-}
-
-.about-image-placeholder-large {
-  width: 100%;
-  max-width: 350px;
-  height: 450px;
-  border-radius: var(--radius-lg);
-  background: linear-gradient(135deg, var(--color-secondary-light) 0%, var(--color-primary-light) 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-}
-
-.about-icon-large {
-  font-size: 10rem;
 }
 
 .about-text h2 {
@@ -65,6 +110,86 @@
   color: var(--color-text-light);
   font-size: 1.05rem;
   line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+/* About Image Frame - Real Image */
+.about-image-frame-real {
+  width: 100%;
+  max-width: 450px;
+  aspect-ratio: 3/4;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-xl);
+  margin: 0 auto;
+}
+
+.about-image-real {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* About Path Section - Block 2 */
+.about-path-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.about-path-image-wrapper {
+  margin-bottom: 48px;
+}
+
+.about-path-frame {
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-xl);
+}
+
+.about-path-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.about-path-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.about-path-content .section-tag {
+  display: inline-block;
+  font-family: var(--font-script);
+  font-size: 1.4rem;
+  color: var(--color-primary);
+  font-style: italic;
+  margin-bottom: var(--spacing-md);
+}
+
+.about-path-content h2 {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: 400;
+  color: var(--color-text-dark);
+  margin-bottom: var(--spacing-lg);
+}
+
+.about-path-content .about-divider {
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-terracotta));
+  margin: 0 auto var(--spacing-xl);
+}
+
+.about-path-text {
+  font-size: 1.1rem;
+  color: var(--color-text-light);
+  line-height: 1.8;
+  margin-bottom: 0;
 }
 
 /* Journey Section */
@@ -216,13 +341,24 @@
 
 /* Responsive */
 @media (max-width: 968px) {
-  .about-content-grid {
-    grid-template-columns: 1fr;
-    text-align: center;
+  .about-intro-section {
+    padding-top: 56px;
+    padding-bottom: 56px;
   }
 
-  .about-image-placeholder-large {
-    height: 300px;
+  .about-path-section {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .about-content-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-image-frame-real {
+    max-width: 350px;
+    aspect-ratio: 3/4;
   }
 
   .about-text {
@@ -231,6 +367,10 @@
 
   .about-text h2 {
     text-align: center;
+  }
+
+  .about-path-frame {
+    max-width: 100%;
   }
 
   .journey-timeline::before {

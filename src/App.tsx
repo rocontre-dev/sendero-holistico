@@ -9,6 +9,7 @@ import TerapiaSomatica from './pages/TerapiaSomatica'
 import Testimonios from './pages/Testimonios'
 import Contacto from './pages/Contacto'
 import Reservas from './pages/Reservas'
+import Talleres from './pages/Talleres'
 
 // Nuevos servicios principales
 import MovimientoConsciente from './pages/MovimientoConsciente'
@@ -37,6 +38,7 @@ function App() {
         <Route path="diseno-humano" element={<DisenoHumano />} />
         <Route path="terapia-somatica" element={<TerapiaSomatica />} />
         
+        <Route path="talleres" element={<Talleres />} />
         <Route path="testimonios" element={<Testimonios />} />
         <Route path="contacto" element={<Contacto />} />
         <Route path="reservas" element={<Reservas />} />

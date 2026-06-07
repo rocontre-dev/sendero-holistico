@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import './About.css'
+import aboutHero from '../assets/images/about/about-hero.jpg'
+import aboutEmbrace from '../assets/images/about/about-embrace.jpg'
+import aboutPath from '../assets/images/about/about-path.jpg'
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
@@ -25,8 +28,17 @@ const staggerContainer = {
 function About() {
   return (
     <div className="about-page">
-      {/* Hero Section - Contemplative */}
+      {/* Hero Section - Contemplative with Background Image */}
       <section className="about-hero">
+        <div className="hero-background">
+          <div 
+            className="hero-image"
+            style={{ backgroundImage: `url(${aboutHero})` }}
+            role="img"
+            aria-label="Ivanna - terapeuta holística en conexión con la naturaleza"
+          ></div>
+          <div className="hero-overlay"></div>
+        </div>
         <div className="container">
           <motion.div
             initial="hidden"
@@ -45,27 +57,16 @@ function About() {
         </div>
       </section>
 
-      {/* Main Content - Human & Warm */}
-      <section className="section">
-        <div className="container">
+      {/* Main Content - Human & Warm - Block 1 */}
+      <section className="section about-intro-section">
+        <div className="container container-wide">
           <div className="about-content-grid">
             <motion.div 
-              className="about-image-large"
+              className="about-text"
               initial={{ opacity: 0, x: -40 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 1 }}
-            >
-              <div className="about-image-placeholder-large">
-                <span className="about-icon-large">👩‍🦰</span>
-              </div>
-            </motion.div>
-            <motion.div 
-              className="about-text"
-              initial={{ opacity: 0, x: 40 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ duration: 1, delay: 0.2 }}
             >
               <h2>Hola, soy <span className="highlight">Ivanna</span></h2>
               <p>
@@ -88,7 +89,56 @@ function About() {
                 seguro donde recordar cómo hacerlo.
               </p>
             </motion.div>
+            <motion.div 
+              className="about-image-large"
+              initial={{ opacity: 0, x: 40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 1, delay: 0.2 }}
+            >
+              <div className="about-image-frame-real">
+                <img 
+                  src={aboutEmbrace} 
+                  alt="Ivanna en un momento de presencia y conexión personal"
+                  className="about-image-real"
+                  loading="lazy"
+                />
+              </div>
+            </motion.div>
           </div>
+        </div>
+      </section>
+
+      {/* Block 2 - Visual Section with about-path.jpg */}
+      <section className="section about-path-section">
+        <div className="container">
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={staggerContainer}
+          >
+            <motion.div className="about-path-image-wrapper" variants={fadeInUp}>
+              <div className="about-path-frame">
+                <img 
+                  src={aboutPath} 
+                  alt="Sendero rodeado de naturaleza simbolizando el camino de transformación personal"
+                  className="about-path-image"
+                  loading="lazy"
+                />
+              </div>
+            </motion.div>
+            <motion.div className="about-path-content" variants={fadeInUp}>
+              <span className="section-tag">Mi Filosofía</span>
+              <h2>Cada proceso tiene su propio ritmo</h2>
+              <div className="about-divider"></div>
+              <p className="about-path-text">
+                Creo profundamente en la capacidad de cada persona para recordar 
+                su propia sabiduría interior. Mi labor consiste en acompañar ese 
+                proceso con presencia, escucha y sensibilidad.
+              </p>
+            </motion.div>
+          </motion.div>
         </div>
       </section>
 

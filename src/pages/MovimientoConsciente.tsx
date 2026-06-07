@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import './MovimientoConsciente.css'
+import movimientoHero from '../assets/images/movimiento-consciente/movimiento-hero.jpg'
+import movimientoPractica from '../assets/images/movimiento-consciente/movimiento-practica.jpg'
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
@@ -28,6 +30,13 @@ function MovimientoConsciente() {
       {/* Hero Section */}
       <section className="service-hero">
         <div className="hero-background">
+          <div 
+            className="hero-image"
+            style={{ backgroundImage: `url(${movimientoHero})` }}
+            role="img"
+            aria-label="Movimiento Consciente - práctica grupal de meditación en movimiento y respiración"
+          ></div>
+          <div className="hero-overlay"></div>
           <div className="hero-blob hero-blob-1"></div>
           <div className="hero-blob hero-blob-2"></div>
         </div>
@@ -45,8 +54,8 @@ function MovimientoConsciente() {
               Movimiento Consciente
             </motion.h1>
             <motion.p className="hero-subtitle" variants={fadeInUp}>
-              Una experiencia de yoga bailado donde el cuerpo se convierte 
-              en templo, el movimiento en plegaria y la respiración en ancla.
+              Prácticas que despiertan tu cuerpo, tu energía y tu presencia. 
+              Un retorno al movimiento natural, libre y auténtico.
             </motion.p>
             <motion.div variants={fadeInUp}>
               <Link to="/reservas" className="btn btn-primary btn-large">
@@ -57,9 +66,9 @@ function MovimientoConsciente() {
         </div>
       </section>
 
-      {/* Introducción */}
-      <section className="section">
-        <div className="container">
+      {/* Introducción - Editorial Section */}
+      <section className="section intro-section">
+        <div className="container container-wide">
           <motion.div 
             className="intro-grid"
             initial="hidden"
@@ -67,35 +76,30 @@ function MovimientoConsciente() {
             viewport={{ once: true, margin: "-100px" }}
             variants={staggerContainer}
           >
-            <motion.div className="intro-image" variants={fadeInUp}>
-              <div className="intro-image-frame">
-                <div className="intro-image-placeholder">
-                  <span className="intro-icon">🌊</span>
-                </div>
+            <motion.div className="intro-content" variants={fadeInUp}>
+              <span className="intro-eyebrow">SOMÁTICO · RESPIRACIÓN · PRESENCIA</span>
+              <h2>Habitar el cuerpo con amor y atención.</h2>
+              <div className="about-divider"></div>
+              <p className="intro-description">
+                A través del movimiento consciente, la respiración y la meditación 
+                en movimiento, cultivamos vitalidad, equilibrio y conexión profunda 
+                con nosotros mismos y con la vida.
+              </p>
+              <div className="intro-cta">
+                <Link to="/reservas" className="btn btn-primary">
+                  Explorar prácticas
+                </Link>
               </div>
             </motion.div>
-            <motion.div className="intro-content" variants={fadeInUp}>
-              <span className="section-tag">¿Qué es?</span>
-              <h2>El Cuerpo en Danza con el Alma</h2>
-              <div className="about-divider"></div>
-              <p>
-                Movimiento Consciente es una invitación a habitar tu cuerpo de 
-                manera plena y amorosa. A través de una práctica que fusiona la 
-                meditación con el movimiento intuitivo, creamos un espacio donde 
-                puedes soltar el juicio y simplemente ser.
-              </p>
-              <p>
-                No se trata de bailar "bien" o seguir coreografías. Se trata de 
-                escuchar la sabiduría del cuerpo, de permitir que el movimiento 
-                surja desde dentro, de convertirte en testigo y participante de 
-                tu propia danza interior.
-              </p>
-              <p>
-                Cada sesión es un viaje: comenzamos enraizando, conectando con 
-                la respiración, y gradualmente permitimos que el cuerpo se 
-                exprese libremente, liberando tensiones y accediendo a estados 
-                meditativos profundos a través del movimiento.
-              </p>
+            <motion.div className="intro-image" variants={fadeInUp}>
+              <div className="intro-image-frame">
+                <img 
+                  src={movimientoPractica} 
+                  alt="Espacio de acompañamiento y presencia durante una práctica de Movimiento Consciente"
+                  className="intro-image-real"
+                  loading="lazy"
+                />
+              </div>
             </motion.div>
           </motion.div>
         </div>

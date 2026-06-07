@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import './HabitarEmociones.css'
+import habitarHero from '../assets/images/habitar-emociones/habitar-emociones-hero.jpg'
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
@@ -28,6 +29,13 @@ function HabitarEmociones() {
       {/* Hero Section */}
       <section className="service-hero">
         <div className="hero-background">
+          <div 
+            className="hero-image"
+            style={{ backgroundImage: `url(${habitarHero})` }}
+            role="img"
+            aria-label="Grupo en contemplación junto al lago durante una experiencia de Habitar Emociones"
+          ></div>
+          <div className="hero-overlay"></div>
           <div className="hero-blob hero-blob-1"></div>
           <div className="hero-blob hero-blob-2"></div>
         </div>
@@ -39,27 +47,28 @@ function HabitarEmociones() {
             className="hero-content"
           >
             <motion.span className="section-tag" variants={fadeInUp}>
-              Experiencia Somática
+              EXPERIENCIA SOMÁTICA · AUTOESCUCHA · PRESENCIA
             </motion.span>
             <motion.h1 className="hero-title" variants={fadeInUp}>
               Habitar Emociones
             </motion.h1>
             <motion.p className="hero-subtitle" variants={fadeInUp}>
-              Aprende a sentir, comprender y regular tus emociones desde 
-              el cuerpo. Tu cuerpo es la brújula que siempre ha estado contigo.
+              Un espacio para aprender a sentir, escuchar y canalizar las emociones. 
+              El cuerpo como brújula interior para regresar a la calma, la presencia 
+              y la conexión contigo.
             </motion.p>
             <motion.div variants={fadeInUp}>
               <Link to="/reservas" className="btn btn-primary btn-large">
-                Solicitar Información
+                Conocer más
               </Link>
             </motion.div>
           </motion.div>
         </div>
       </section>
 
-      {/* Introducción */}
-      <section className="section">
-        <div className="container">
+      {/* Introducción - Editorial Section */}
+      <section className="section intro-section">
+        <div className="container container-wide">
           <motion.div 
             className="intro-grid"
             initial="hidden"
@@ -68,31 +77,28 @@ function HabitarEmociones() {
             variants={staggerContainer}
           >
             <motion.div className="intro-content" variants={fadeInUp}>
-              <span className="section-tag">¿Qué es?</span>
-              <h2>El Cuerpo como Brújula Interior</h2>
+              <span className="intro-eyebrow">CUERPO · EMOCIÓN · CONSCIENCIA</span>
+              <h2>Aprender a sentir es volver a escucharte.</h2>
               <div className="about-divider"></div>
-              <p>
-                Habitar Emociones es un programa de experiencia somática diseñado 
-                para reconectarte con tu mundo emocional desde un lugar seguro y 
-                contenido. Aprendemos a sentir las emociones en el cuerpo, a 
-                comprender sus mensajes y a regular el sistema nervioso.
+              <p className="intro-description">
+                A través del trabajo somático y la presencia consciente, cultivamos 
+                una relación más amable con nuestras emociones. Aprendemos a reconocer 
+                sus mensajes y a permitir que el cuerpo se convierta en una brújula interior.
               </p>
-              <p>
-                Las emociones no son enemigas. Son mensajeras, guías, información 
-                vital sobre lo que necesitamos. Pero cuando no sabemos cómo habitarlas, 
-                pueden sentirse abrumadoras, confusas o peligrosas.
-              </p>
-              <p>
-                Este programa te invita a crear una relación diferente con tus 
-                emociones: desde la curiosidad, la compasión y la regulación 
-                consciente. Un espacio íntimo donde aprender a estar contigo misma.
-              </p>
+              <div className="intro-cta">
+                <Link to="/reservas" className="btn btn-primary">
+                  Explorar experiencia
+                </Link>
+              </div>
             </motion.div>
             <motion.div className="intro-image" variants={fadeInUp}>
               <div className="intro-image-frame">
-                <div className="intro-image-placeholder">
-                  <span className="intro-icon">💖</span>
-                </div>
+                <img 
+                  src={habitarHero} 
+                  alt="Espacio de presencia y conexión con la naturaleza durante una práctica emocional"
+                  className="intro-image-real"
+                  loading="lazy"
+                />
               </div>
             </motion.div>
           </motion.div>

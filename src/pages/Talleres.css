@@ -1,0 +1,299 @@
+/* ============================================
+   TALLERES Y RETIROS - DISEÑO EDITORIAL
+   ============================================ */
+
+/* Hero Section */
+.talleres-page .service-hero {
+  background: none;
+  position: relative;
+  min-height: 75vh;
+  z-index: 1;
+}
+
+.service-hero .hero-background .hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.service-hero .hero-background .hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.65),
+    rgba(0, 0, 0, 0.45),
+    rgba(0, 0, 0, 0.30)
+  );
+  z-index: 1;
+}
+
+.service-hero .hero-background .hero-blob {
+  z-index: 2;
+}
+
+.service-hero .hero-content {
+  position: relative;
+  z-index: 3;
+  max-width: 650px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.service-hero .hero-title {
+  color: #F8F4EC;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.service-hero .hero-subtitle {
+  color: rgba(255, 255, 255, 0.92);
+  line-height: 1.7;
+  max-width: 600px;
+  margin: 0 auto var(--spacing-2xl);
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
+}
+
+.service-hero .hero-buttons {
+  display: flex;
+  gap: var(--spacing-lg);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.service-hero .section-tag {
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: var(--spacing-lg);
+}
+
+/* Próximas Section */
+.proximas-section {
+  background-color: var(--color-cream);
+}
+
+.proximas-card {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  padding: var(--spacing-3xl);
+}
+
+.proximas-badge {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  background: var(--color-beige-light);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border-radius: var(--radius-full);
+  margin-bottom: var(--spacing-xl);
+}
+
+.proximas-card h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--color-text-dark);
+  margin-bottom: var(--spacing-lg);
+}
+
+.proximas-card p {
+  font-size: 1.05rem;
+  color: var(--color-text-light);
+  line-height: 1.8;
+  margin-bottom: var(--spacing-2xl);
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Talleres Lista Section */
+.talleres-lista-section {
+  background-color: var(--color-white);
+}
+
+.talleres-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-3xl);
+}
+
+.taller-card {
+  text-align: center;
+  padding: var(--spacing-2xl);
+}
+
+.taller-icon {
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-lg);
+}
+
+.taller-card h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--color-text-dark);
+  margin-bottom: var(--spacing-md);
+}
+
+.taller-card p {
+  font-size: 0.95rem;
+  color: var(--color-text-light);
+  line-height: 1.7;
+  margin-bottom: var(--spacing-xl);
+}
+
+/* Retiros Section */
+.retiros-section {
+  background-color: var(--color-beige-light);
+}
+
+.retiro-card {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  padding: var(--spacing-3xl);
+}
+
+.retiro-badge {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  background: var(--color-beige);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border-radius: var(--radius-full);
+  margin-bottom: var(--spacing-xl);
+}
+
+.retiro-content h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--color-text-dark);
+  margin-bottom: var(--spacing-lg);
+}
+
+.retiro-content p {
+  font-size: 1.05rem;
+  color: var(--color-text-light);
+  line-height: 1.8;
+  margin-bottom: var(--spacing-2xl);
+  max-width: 500px;
+  margin: 0 auto var(--spacing-2xl);
+}
+
+/* CTA Section */
+.cta-section {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  padding: 100px 0;
+  text-align: center;
+}
+
+.cta-content {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.cta-tagline {
+  display: inline-block;
+  font-family: var(--font-script);
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.85);
+  font-style: italic;
+  margin-bottom: var(--spacing-lg);
+}
+
+.cta-title {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 400;
+  color: var(--color-white);
+  margin-bottom: var(--spacing-xl);
+  line-height: 1.3;
+}
+
+.cta-text {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.8;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.cta-buttons {
+  display: flex;
+  gap: var(--spacing-lg);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-content .btn-primary {
+  background-color: var(--color-white);
+  color: var(--color-primary-dark);
+}
+
+.cta-content .btn-primary:hover {
+  background-color: var(--color-cream);
+  transform: translateY(-2px);
+}
+
+.cta-content .btn-outline {
+  border-color: rgba(255, 255, 255, 0.5);
+  color: var(--color-white);
+}
+
+.cta-content .btn-outline:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: var(--color-white);
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .talleres-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .service-hero .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-hero .hero-buttons .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .talleres-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-buttons .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}

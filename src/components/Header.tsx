@@ -69,6 +69,11 @@ function Header() {
               </NavLink>
             </li>
             <li>
+              <NavLink to="/talleres" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+                Talleres y Retiros
+              </NavLink>
+            </li>
+            <li>
               <NavLink to="/reservas" className="btn btn-cta-reservas nav-cta-reservas">
                 Reservar sesión
               </NavLink>

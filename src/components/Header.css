@@ -80,8 +80,9 @@
 .nav-list {
   display: flex;
   align-items: center;
-  gap: 2.5rem;
+  gap: 1.5rem;
   list-style: none;
+  flex-wrap: nowrap;
 }
 
 .nav-link {
@@ -93,6 +94,12 @@
   padding: 0.5rem 0;
   position: relative;
   transition: var(--transition-base);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.4;
+  min-height: 2.4rem;
+  white-space: nowrap;
 }
 
 .nav-link::after {
@@ -204,7 +211,7 @@
 .btn-cta-reservas {
   background: linear-gradient(135deg, var(--color-sage) 0%, var(--color-sage-dark) 100%);
   color: var(--color-white) !important;
-  padding: 0.7rem 1.3rem;
+  padding: 0.75rem 1.5rem;
   font-size: 0.82rem;
   font-weight: 500;
   letter-spacing: 0.04em;
@@ -213,6 +220,9 @@
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  min-width: 180px;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .btn-cta-reservas::before {

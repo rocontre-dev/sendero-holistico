@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import './CosmosCorporeo.css'
+import cosmosHero from '../assets/images/cosmos-corporeo/cosmos-hero.jpg'
+import cosmosRitual from '../assets/images/cosmos-corporeo/cosmos-ritual.jpg'
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
@@ -28,6 +30,13 @@ function CosmosCorporeo() {
       {/* Hero Section */}
       <section className="service-hero">
         <div className="hero-background">
+          <div 
+            className="hero-image"
+            style={{ backgroundImage: `url(${cosmosHero})` }}
+            role="img"
+            aria-label="Cosmos Corpóreo - Carta Natal Chamánica y Diseño Humano"
+          ></div>
+          <div className="hero-overlay"></div>
           <div className="hero-blob hero-blob-1"></div>
           <div className="hero-blob hero-blob-2"></div>
         </div>
@@ -94,9 +103,12 @@ function CosmosCorporeo() {
             </motion.div>
             <motion.div className="intro-image" variants={fadeInUp}>
               <div className="intro-image-frame">
-                <div className="intro-image-placeholder">
-                  <span className="intro-icon">🌟</span>
-                </div>
+                <img 
+                  src={cosmosRitual} 
+                  alt="Espacio ceremonial de autoconocimiento y exploración energética"
+                  className="intro-image-real"
+                  loading="lazy"
+                />
               </div>
             </motion.div>
           </motion.div>
