@@ -48,7 +48,7 @@ function CosmosCorporeo() {
             className="hero-content"
           >
             <motion.span className="section-tag" variants={fadeInUp}>
-              Astrología Somática
+              Astrología Chamánica
             </motion.span>
             <motion.h1 className="hero-title" variants={fadeInUp}>
               Cosmos Corpóreo

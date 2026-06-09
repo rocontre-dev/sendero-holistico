@@ -63,9 +63,7 @@ function Home() {
               Siente, Recuerda, Habita y Transforma
             </motion.h1>
             <motion.p className="hero-subtitle" variants={fadeInUp}>
-              Bienvenido a un espacio de serenidad, autodescubrimiento y autoescucha. 
-              Un lugar donde puedes detenerte, respirar y recordar tu camino de vuelta 
-              al bienestar y a la salud integral.
+              Bienvenido a este espacio de serenidad, autodescubrimiento y autoescucha. Un lugar donde puedes detenerte, respirar y recordar tu camino de vuelta al bienestar y a la salud integral.
             </motion.p>
             <motion.div className="hero-buttons" variants={fadeInUp}>
               <Link to="/reservas" className="btn btn-primary btn-large">
@@ -138,30 +136,52 @@ function Home() {
             viewport={{ once: true, margin: "-100px" }}
             variants={staggerContainer}
           >
-            {/* Movimiento Consciente */}
+            {/* Consulta Bioemoción (Prioridad 1) */}
             <motion.div className="servicio-card" variants={fadeInUp}>
-              <Link to="/movimiento-consciente" className="servicio-link">
+              <Link to="/bioemocion" className="servicio-link">
                 <div className="servicio-image-frame">
                   <img 
-                    src={movimientoHero} 
-                    alt="Movimiento Consciente - práctica grupal"
+                    src={aboutPath} 
+                    alt="Consulta Bioemoción"
                     className="servicio-image"
                     loading="lazy"
                   />
                 </div>
                 <div className="servicio-content">
-                  <span className="servicio-tag">Talleres y Programas</span>
-                  <h3>Movimiento Consciente</h3>
+                  <span className="servicio-tag">Consultas y Sesiones</span>
+                  <h3>Consulta Bioemoción</h3>
                   <p>
-                    Meditación en movimiento y respiración consciente. 
-                    Una experiencia corporal para habitar tu cuerpo con presencia.
+                    Acompañamiento terapéutico individual de sanación psicoemocional 
+                    con enfoque integrativo.
                   </p>
-                  <span className="servicio-cta">Explorar experiencia →</span>
+                  <span className="servicio-cta">Agendar sesión →</span>
                 </div>
               </Link>
             </motion.div>
 
-            {/* Habitar Emociones */}
+            {/* Cosmos Corpóreo (Prioridad 2) */}
+            <motion.div className="servicio-card" variants={fadeInUp}>
+              <Link to="/cosmos-corporeo" className="servicio-link">
+                <div className="servicio-image-frame">
+                  <img 
+                    src={cosmosHero} 
+                    alt="Cosmos Corpóreo - carta natal chamánica"
+                    className="servicio-image"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="servicio-content">
+                  <span className="servicio-tag">Astrología Chamánica</span>
+                  <h3>Cosmos Corpóreo</h3>
+                  <p>
+                    Lectura de carta natal con enfoque chamánico como herramienta terapéutica para acompañar tu proceso. Descubre tu mapa bioenergético único.
+                  </p>
+                  <span className="servicio-cta">Explorar consulta →</span>
+                </div>
+              </Link>
+            </motion.div>
+
+            {/* Habitar Emociones (Prioridad 3) */}
             <motion.div className="servicio-card" variants={fadeInUp}>
               <Link to="/habitar-emociones" className="servicio-link">
                 <div className="servicio-image-frame">
@@ -184,48 +204,25 @@ function Home() {
               </Link>
             </motion.div>
 
-            {/* Consulta Terapéutica */}
+            {/* Movimiento Consciente (Prioridad 4) */}
             <motion.div className="servicio-card" variants={fadeInUp}>
-              <Link to="/bioemocion" className="servicio-link">
+              <Link to="/movimiento-consciente" className="servicio-link">
                 <div className="servicio-image-frame">
                   <img 
-                    src={aboutPath} 
-                    alt="Consulta Terapéutica Holística"
+                    src={movimientoHero} 
+                    alt="Movimiento Consciente - práctica grupal"
                     className="servicio-image"
                     loading="lazy"
                   />
                 </div>
                 <div className="servicio-content">
-                  <span className="servicio-tag">Consultas y Sesiones</span>
-                  <h3>Consulta Terapéutica Holística</h3>
+                  <span className="servicio-tag">Talleres y Programas</span>
+                  <h3>Movimiento Consciente</h3>
                   <p>
-                    Acompañamiento terapéutico individual de sanación psicoemocional 
-                    con enfoque integrativo.
+                    Meditación en movimiento y respiración consciente. 
+                    Una experiencia corporal para habitar tu cuerpo con presencia.
                   </p>
-                  <span className="servicio-cta">Agendar sesión →</span>
-                </div>
-              </Link>
-            </motion.div>
-
-            {/* Cosmos Corpóreo */}
-            <motion.div className="servicio-card" variants={fadeInUp}>
-              <Link to="/cosmos-corporeo" className="servicio-link">
-                <div className="servicio-image-frame">
-                  <img 
-                    src={cosmosHero} 
-                    alt="Cosmos Corpóreo - carta natal chamánica"
-                    className="servicio-image"
-                    loading="lazy"
-                  />
-                </div>
-                <div className="servicio-content">
-                  <span className="servicio-tag">Astrología Somática</span>
-                  <h3>Cosmos Corpóreo</h3>
-                  <p>
-                    Carta natal chamánica y diseño humano para descubrir 
-                    tu propósito, talentos y mapa energético único.
-                  </p>
-                  <span className="servicio-cta">Explorar consulta →</span>
+                  <span className="servicio-cta">Explorar experiencia →</span>
                 </div>
               </Link>
             </motion.div>

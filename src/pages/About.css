@@ -13,6 +13,7 @@
   position: absolute;
   inset: 0;
   overflow: hidden;
+  z-index: 0;
 }
 
 .about-hero .hero-background .hero-image {
@@ -38,6 +39,20 @@
     rgba(20, 20, 20, 0.45) 35%,
     rgba(20, 20, 20, 0.20) 100%
   );
+}
+
+/* Hero content - ensure text is above overlay */
+.about-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.about-hero .hero-quote,
+.about-hero .section-title,
+.about-hero .section-subtitle {
+  opacity: 1;
+  visibility: visible;
+  display: block;
 }
 
 /* Hero Quote - Rumi - Updated for image background */

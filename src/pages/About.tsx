@@ -6,11 +6,14 @@ import aboutEmbrace from '../assets/images/about/about-embrace.jpg'
 import aboutPath from '../assets/images/about/about-path.jpg'
 
 const fadeInUp = {
-  hidden: { opacity: 0, y: 40 },
+  hidden: { opacity: 0, y: 20 },
   visible: { 
     opacity: 1, 
     y: 0,
-    transition: { duration: 1, ease: [0.25, 0.1, 0.25, 1] as const }
+    transition: { 
+      duration: 6, 
+      ease: [0.25, 0.1, 0.25, 1] as const
+    }
   }
 }
 
@@ -19,7 +22,7 @@ const staggerContainer = {
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.25,
+      staggerChildren: 0.5,
       delayChildren: 0.3
     }
   }
@@ -40,20 +43,14 @@ function About() {
           <div className="hero-overlay"></div>
         </div>
         <div className="container">
-          <motion.div
-            initial="hidden"
-            animate="visible"
-            variants={staggerContainer}
-          >
-            <motion.blockquote className="hero-quote" variants={fadeInUp}>
-              "Vete despacio que a donde tienes que llegar es a ti mismo"
-              <cite>— Rumi</cite>
-            </motion.blockquote>
-            <motion.h1 className="section-title" variants={fadeInUp}>Sobre Mí</motion.h1>
-            <motion.p className="section-subtitle" variants={fadeInUp}>
-              Conoce mi historia, mi enfoque y la intención con la que te acompaño
-            </motion.p>
-          </motion.div>
+          <blockquote className="hero-quote">
+            "Vete despacio que a donde tienes que llegar es a ti mismo"
+            <cite>— Rumi</cite>
+          </blockquote>
+          <h1 className="section-title">Sobre Mí</h1>
+          <p className="section-subtitle">
+            Conoce mi historia, mi enfoque y la intención con la que te acompaño
+          </p>
         </div>
       </section>
 
@@ -75,8 +72,7 @@ function About() {
               </p>
               <p>
                 En mí encontrarás un acompañamiento cercano, sensible y humano 
-                con presencia, pausa y calma. No soy una terapeuta distante; estoy 
-                presente, humana, contigo en cada sesión.
+                con presencia, pausa y calma.
               </p>
               <p>
                 Mi enfoque integra al cuerpo, la psicoemoción y la espiritualidad. 
@@ -167,25 +163,29 @@ function About() {
             variants={staggerContainer}
           >
             <motion.div className="journey-item" variants={fadeInUp}>
-              <div className="journey-year">2012</div>
+              <div className="journey-year">2016</div>
               <div className="journey-content card">
                 <h3>El Inicio de Mi Búsqueda</h3>
                 <p>
-                  Comencé mis estudios en psicología transpersonal y me adentré en 
-                  el mundo de las terapias alternativas, buscando integrar mente, 
-                  cuerpo y espíritu. Era mi propia sed de comprensión profunda.
+                  Dos años después de graduarme de Derecho, recibí un diagnóstico 
+                  médico que marcó un antes y un después en mi vida. Aquella experiencia 
+                  abrió un camino profundo de transformación. Comencé a explorar las 
+                  constelaciones familiares, la terapia transpersonal, sistémica y gestalt. 
+                  Al mismo tiempo, me fui adentrando en el chamanismo, la meditación y el yoga, 
+                  conectando con un legado ancestral presente en las mujeres de mi linaje.
                 </p>
               </div>
             </motion.div>
 
             <motion.div className="journey-item" variants={fadeInUp}>
-              <div className="journey-year">2015</div>
+              <div className="journey-year">Desde mucho antes</div>
               <div className="journey-content card">
-                <h3>La Bioenergía como Puerta</h3>
+                <h3>El Lenguaje del Cuerpo</h3>
                 <p>
-                  Me certifiqué en terapia bioenergética, aprendiendo a trabajar con 
-                  el campo energético del cuerpo para liberar bloqueos emocionales 
-                  profundos. Descubrí que el cuerpo guarda toda nuestra historia.
+                  Aunque mi camino terapéutico comenzó años después, mi conexión con el 
+                  cuerpo empezó mucho antes. Bailo desde los cinco años y el flamenco, 
+                  junto con otros ritmos y estilos, ha sido una gran puerta de 
+                  autodescubrimiento y expresión.
                 </p>
               </div>
             </motion.div>
@@ -193,23 +193,24 @@ function About() {
             <motion.div className="journey-item" variants={fadeInUp}>
               <div className="journey-year">2017</div>
               <div className="journey-content card">
-                <h3>El Llamado del Diseño Humano</h3>
+                <h3>Mi Encuentro con la Espiritualidad</h3>
                 <p>
-                  Descubrí el Diseño Humano y me formé como lectora certificada, 
-                  una herramienta poderosa para el autoconocimiento y la toma de 
-                  decisiones desde la autoridad interna.
+                  En mi búsqueda de respuestas estudié distintas filosofías y tradiciones. 
+                  Con el tiempo comprendí que, más allá de sus diferencias, todas apuntan 
+                  hacia una misma fuerza que nos sostiene y nos conecta: el amor.
                 </p>
               </div>
             </motion.div>
 
             <motion.div className="journey-item" variants={fadeInUp}>
-              <div className="journey-year">2019</div>
+              <div className="journey-year">2020</div>
               <div className="journey-content card">
-                <h3>La Sabiduría del Cuerpo</h3>
+                <h3>La Formación y el Acompañamiento</h3>
                 <p>
-                  Completé mi formación en terapia somática, integrando el trabajo 
-                  con el sistema nervioso y las sensaciones corporales. El cuerpo 
-                  como mapa vivo de nuestra verdad.
+                  Comencé mi formación en Bioemoción y Movimiento Terapia. Entre 2021 y 2022 
+                  empecé a facilitar talleres de Movimiento Consciente y Danzaterapia con 
+                  distintos grupos. Estas experiencias confirmaron en mí el enorme impacto 
+                  que tiene el cuerpo y su energía en nuestra salud y bienestar.
                 </p>
               </div>
             </motion.div>
@@ -217,11 +218,49 @@ function About() {
             <motion.div className="journey-item" variants={fadeInUp}>
               <div className="journey-year">2022</div>
               <div className="journey-content card">
-                <h3>Nace Este Espacio</h3>
+                <h3>Bioenergía y Chamanismo</h3>
                 <p>
-                  Decidí crear Sendero Holístico para compartir mi visión integradora 
-                  de la sanación y llegar a más personas en su camino de transformación 
-                  y reconexión interior.
+                  Continué profundizando en los estudios de bioenergía y chamanismo en México, 
+                  integrando una mirada más amplia y profunda sobre los procesos humanos.
+                </p>
+              </div>
+            </motion.div>
+
+            <motion.div className="journey-item" variants={fadeInUp}>
+              <div className="journey-year">2024</div>
+              <div className="journey-content card">
+                <h3>Cuerpo y Trauma</h3>
+                <p>
+                  Comencé mi formación como terapeuta somática especializada en cuerpo y trauma, 
+                  inspirada por las enseñanzas de Peter Levine y Gabor Maté.
+                </p>
+              </div>
+            </motion.div>
+
+            <motion.div className="journey-item" variants={fadeInUp}>
+              <div className="journey-year">2025</div>
+              <div className="journey-content card">
+                <h3>Astrología Chamánica y Diseño Humano</h3>
+                <p>
+                  Inicié mis estudios de Astrología Chamánica y Bases de Diseño Humano, 
+                  herramientas que utilizo como apoyo terapéutico y como guías para comprender 
+                  nuestros talentos, desafíos y propósito.
+                </p>
+              </div>
+            </motion.div>
+
+            <motion.div className="journey-item" variants={fadeInUp}>
+              <div className="journey-year">Hoy</div>
+              <div className="journey-content card">
+                <h3>Continúo Acompañando</h3>
+                <p>
+                  Hoy continúo mi formación en Terapia Narrativa Jungiana para la integración 
+                  de la sombra y sigo acompañando procesos de sanación, liberación y autodescubrimiento. 
+                  Creo profundamente en la capacidad autorreguladora y sanadora que existe en cada uno 
+                  de nosotros. Las crisis y los desafíos forman parte del camino y muchas veces 
+                  esconden oportunidades para volver al equilibrio. Desde mi propia experiencia, 
+                  hoy acompaño a otras personas a recordar el camino de regreso a la paz mental, 
+                  la salud y el bienestar.
                 </p>
               </div>
             </motion.div>
