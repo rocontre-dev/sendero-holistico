@@ -182,10 +182,7 @@ function About() {
               <div className="journey-content card">
                 <h3>El Lenguaje del Cuerpo</h3>
                 <p>
-                  Aunque mi camino terapéutico comenzó años después, mi conexión con el 
-                  cuerpo empezó mucho antes. Bailo desde los cinco años y el flamenco, 
-                  junto con otros ritmos y estilos, ha sido una gran puerta de 
-                  autodescubrimiento y expresión.
+                  Aunque mi camino terapéutico comenzó años después, mi conexión con el cuerpo y su capacidad de autorregulación empezó mucho antes. Bailo desde los cinco años y el flamenco, junto con otros ritmos y estilos, ha sido una gran herramienta de autodescubrimiento y equilibrio emocional.
                 </p>
               </div>
             </motion.div>
@@ -198,6 +195,7 @@ function About() {
                   En mi búsqueda de respuestas estudié distintas filosofías y tradiciones. 
                   Con el tiempo comprendí que, más allá de sus diferencias, todas apuntan 
                   hacia una misma fuerza que nos sostiene y nos conecta: el amor.
+                  Y comprendí que, desde una mirada integral, la salud física y mental también están profundamente conectadas con lo espiritual.
                 </p>
               </div>
             </motion.div>
@@ -220,8 +218,7 @@ function About() {
               <div className="journey-content card">
                 <h3>Bioenergía y Chamanismo</h3>
                 <p>
-                  Continué profundizando en los estudios de bioenergía y chamanismo en México, 
-                  integrando una mirada más amplia y profunda sobre los procesos humanos.
+                  Continué profundizando en los estudios de bioenergía y chamanismo en México, integrando una mirada más amplia y profunda sobre los procesos humanos, entendiendo que estamos más conectados con los ciclos de la naturaleza y que desde allí los procesos de sanación pueden sostenerse en el tiempo.
                 </p>
               </div>
             </motion.div>
@@ -408,16 +405,16 @@ function About() {
             <motion.p className="cta-text" variants={fadeInUp}>
               Estoy aquí para acompañarte en tu proceso de sanación y crecimiento. 
               No tienes que hacerlo sola. Agenda una sesión y comencemos este 
-              viaje de reconexión juntas.
+              viaje.
             </motion.p>
-            <motion.div className="cta-buttons" variants={fadeInUp}>
-              <Link to="/contacto" className="btn btn-primary btn-large">
-                Agendar Sesión
-              </Link>
-              <Link to="/testimonios" className="btn btn-outline btn-large">
-                Ver Testimonios
-              </Link>
-            </motion.div>
+              <motion.div className="cta-buttons" variants={fadeInUp}>
+                <Link to="/contacto" className="btn btn-secondary btn-large">
+                  Agendar Sesión
+                </Link>
+                <Link to="/testimonios" className="btn btn-outline btn-large">
+                  Ver Testimonios
+                </Link>
+              </motion.div>
           </motion.div>
         </div>
       </section>

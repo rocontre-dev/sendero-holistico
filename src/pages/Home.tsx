@@ -393,13 +393,13 @@ function Home() {
               No estás sola en este camino
             </motion.span>
             <motion.h2 className="cta-title" variants={fadeInUp}>
-              ¿Te gustaría comenzar este camino?
+              ¿Te gustaría comenzar?
             </motion.h2>
             <motion.div className="cta-buttons" variants={fadeInUp}>
               <Link to="/reservas" className="btn btn-primary btn-large">
                 Reservar sesión
               </Link>
-              <Link to="/contacto" className="btn btn-outline btn-large">
+              <Link to="/contacto" className="btn btn-secondary btn-large">
                 Escribir por WhatsApp
               </Link>
             </motion.div>

@@ -59,7 +59,7 @@
 .about-hero .hero-quote {
   display: block;
   font-family: var(--font-script);
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   color: rgba(255, 255, 255, 0.85);
   font-style: italic;
   margin-bottom: var(--spacing-xl);
@@ -352,6 +352,36 @@
   gap: 1rem;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+/* CTA Section - About Page Specific */
+.about-page .cta-section .cta-title {
+  color: var(--color-text-dark) !important;
+}
+
+.about-page .cta-section .cta-tagline {
+  color: var(--color-primary);
+  font-family: var(--font-heading);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.8rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.about-page .cta-section .cta-text {
+  color: var(--color-text-light);
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: var(--spacing-xl);
+}
+
+/* Desktop and laptop - keep Rumi quote on single line */
+@media (min-width: 969px) {
+  .about-hero .hero-quote {
+    max-width: 700px;
+    white-space: nowrap;
+  }
 }
 
 /* Responsive */

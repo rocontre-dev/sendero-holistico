@@ -306,17 +306,21 @@
 
   .nav {
     position: fixed;
-    top: 70px;
+    top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    height: 100vh;
+    height: 100dvh;
     background-color: var(--color-cream);
-    padding: 2rem;
+    padding: 5rem 2rem 2rem 2rem;
     transform: translateY(-100%);
     opacity: 0;
     visibility: hidden;
     transition: var(--transition-slow);
     overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    z-index: 999;
   }
 
   .nav.nav-open {
