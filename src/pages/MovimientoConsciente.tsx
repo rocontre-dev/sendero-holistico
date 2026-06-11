@@ -293,7 +293,7 @@ function MovimientoConsciente() {
             </motion.p>
             <motion.div className="cta-buttons" variants={fadeInUp}>
               <Link to="/reservas" className="btn btn-primary btn-large">
-                Solicitar Información
+                Reservas
               </Link>
               <Link to="/contacto" className="btn btn-outline btn-large">
                 Preguntar Más

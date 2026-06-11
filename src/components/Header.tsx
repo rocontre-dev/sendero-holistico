@@ -1,13 +1,40 @@
-import { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { useState, useEffect } from 'react'
+import { NavLink, useNavigate } from 'react-router-dom'
 import './Header.css'
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const navigate = useNavigate()
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
   }
+
+  const closeMenu = () => {
+    setIsMenuOpen(false)
+  }
+
+  const handleNavClick = (path: string) => {
+    navigate(path)
+    closeMenu()
+  }
+
+  // Cerrar menú con tecla Escape
+  useEffect(() => {
+    const handleEscape = (e: KeyboardEvent) => {
+      if (e.key === 'Escape' && isMenuOpen) {
+        closeMenu()
+      }
+    }
+
+    if (isMenuOpen) {
+      document.addEventListener('keydown', handleEscape)
+    }
+
+    return () => {
+      document.removeEventListener('keydown', handleEscape)
+    }
+  }, [isMenuOpen])
 
   return (
     <header className="header">
@@ -30,7 +57,7 @@ function Header() {
         <button 
           className={`mobile-menu-btn ${isMenuOpen ? 'active' : ''}`}
           onClick={toggleMenu}
-          aria-label="Toggle menu"
+          aria-label="Abrir menú"
         >
           <span></span>
           <span></span>
@@ -38,48 +65,60 @@ function Header() {
         </button>
 
         <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
+          {/* Botón de cierre para móvil/tablet */}
+          <button 
+            className="mobile-close-btn"
+            onClick={closeMenu}
+            aria-label="Cerrar menú"
+          >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 6L6 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M6 6L18 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </button>
+
           <ul className="nav-list">
             <li>
-              <NavLink to="/" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+              <NavLink to="/" onClick={() => handleNavClick('/')} className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
                 Inicio
               </NavLink>
             </li>
             <li className="nav-item-dropdown">
               <span className="nav-link">Servicios</span>
               <ul className="dropdown-menu">
-                <li><NavLink to="/movimiento-consciente" className="dropdown-link">Movimiento Consciente</NavLink></li>
-                <li><NavLink to="/habitar-emociones" className="dropdown-link">Habitar Emociones</NavLink></li>
-                <li><NavLink to="/bioemocion" className="dropdown-link">Consulta Bioemoción</NavLink></li>
-                <li><NavLink to="/cosmos-corporeo" className="dropdown-link">Cosmos Corpóreo</NavLink></li>
-                <li><NavLink to="/meditaciones" className="dropdown-link">Meditaciones Guiadas</NavLink></li>
+                <li><NavLink to="/movimiento-consciente" onClick={closeMenu} className="dropdown-link">Movimiento Consciente</NavLink></li>
+                <li><NavLink to="/habitar-emociones" onClick={closeMenu} className="dropdown-link">Habitar Emociones</NavLink></li>
+                <li><NavLink to="/bioemocion" onClick={closeMenu} className="dropdown-link">Consulta Bioemoción</NavLink></li>
+                <li><NavLink to="/cosmos-corporeo" onClick={closeMenu} className="dropdown-link">Cosmos Corpóreo</NavLink></li>
+                <li><NavLink to="/meditaciones" onClick={closeMenu} className="dropdown-link">Meditaciones Guiadas</NavLink></li>
                 <li className="dropdown-divider"></li>
-                <li><NavLink to="/bioenergia" className="dropdown-link">Bioenergía</NavLink></li>
-                <li><NavLink to="/diseno-humano" className="dropdown-link">Diseño Humano</NavLink></li>
-                <li><NavLink to="/terapia-somatica" className="dropdown-link">Terapia Somática</NavLink></li>
+                <li><NavLink to="/bioenergia" onClick={closeMenu} className="dropdown-link">Bioenergía</NavLink></li>
+                <li><NavLink to="/diseno-humano" onClick={closeMenu} className="dropdown-link">Diseño Humano</NavLink></li>
+                <li><NavLink to="/terapia-somatica" onClick={closeMenu} className="dropdown-link">Terapia Somática</NavLink></li>
               </ul>
             </li>
             <li>
-              <NavLink to="/sobre-mi" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+              <NavLink to="/sobre-mi" onClick={() => handleNavClick('/sobre-mi')} className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
                 Sobre Mí
               </NavLink>
             </li>
             <li>
-              <NavLink to="/recursos" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+              <NavLink to="/recursos" onClick={() => handleNavClick('/recursos')} className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
                 Recursos
               </NavLink>
             </li>
             <li>
-              <NavLink to="/talleres" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+              <NavLink to="/talleres" onClick={() => handleNavClick('/talleres')} className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
                 Talleres y Retiros
               </NavLink>
             </li>
             <li>
-              <NavLink to="/reservas" className="btn btn-cta-reservas nav-cta-reservas">
+              <NavLink to="/reservas" onClick={() => handleNavClick('/reservas')} className="btn btn-cta-reservas nav-cta-reservas">
                 Reservar sesión
               </NavLink>
             </li>
             <li>
-              <NavLink to="/contacto" className="btn btn-primary nav-cta">
+              <NavLink to="/contacto" onClick={() => handleNavClick('/contacto')} className="btn btn-primary nav-cta">
                 Contacto
               </NavLink>
             </li>

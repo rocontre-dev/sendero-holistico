@@ -63,14 +63,14 @@ function Home() {
               Siente, Recuerda, Habita y Transforma
             </motion.h1>
             <motion.p className="hero-subtitle" variants={fadeInUp}>
-              Bienvenido a este espacio de serenidad, autodescubrimiento y autoescucha. Un lugar donde puedes detenerte, respirar y recordar tu camino de vuelta al bienestar y a la salud integral.
+              Bienvenido a este espacio de serenidad, autodescubrimiento y autoescucha. Aquí puedes detenerte, respirar y recordar tu camino de vuelta al bienestar y a la salud integral.
             </motion.p>
             <motion.div className="hero-buttons" variants={fadeInUp}>
               <Link to="/reservas" className="btn btn-primary btn-large">
                 Reservar sesión
               </Link>
               <Link to="/sobre-mi" className="btn btn-outline btn-large">
-                Conocer mi enfoque
+                Conoce mi enfoque
               </Link>
             </motion.div>
           </motion.div>
