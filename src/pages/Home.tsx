@@ -1,14 +1,14 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import './Home.css'
-import aboutHero from '../assets/images/about/about-hero.jpg'
+import homeHero from '../assets/images/home/home-contemplation.jpg'
 import aboutEmbrace from '../assets/images/about/about-embrace.jpg'
 import movimientoHero from '../assets/images/movimiento-consciente/movimiento-hero.jpg'
 import habitarHero from '../assets/images/habitar-emociones/habitar-emociones-hero.jpg'
-import aboutPath from '../assets/images/about/about-path.jpg'
+import aboutPath from '../assets/images/home/home-contemplation.jpg'
 import cosmosHero from '../assets/images/cosmos-corporeo/cosmos-hero.jpg'
-import meditationGarden from '../assets/images/meditaciones/meditation-garden.jpg'
-import retreatSunset from '../assets/images/talleres/retreat-sunset.jpg'
+import meditationGarden from '../assets/images/home/meditation-garden.jpg'
+import retreatSunset from '../assets/images/home/retreat-sunset.jpg'
 
 // Custom easing function - slower, more breathing
 const easeOutSmooth = [0.25, 0.1, 0.25, 1] as const
@@ -42,7 +42,7 @@ function Home() {
         <div className="hero-background">
           <div 
             className="hero-image"
-            style={{ backgroundImage: `url(${aboutHero})` }}
+            style={{ backgroundImage: `url(${homeHero})` }}
             role="img"
             aria-label="Ivanna en conexión con la naturaleza"
           ></div>
@@ -56,14 +56,14 @@ function Home() {
             variants={staggerContainer}
           >
             <motion.blockquote className="hero-quote" variants={fadeInUp}>
-              "Vete despacio que a donde tienes que llegar es a ti mismo"
-              <cite>— Rumi</cite>
+              "Quien olvida enferma, quien recuerda sana"
+              <cite>— Don Miguel Ruiz</cite>
             </motion.blockquote>
             <motion.h1 className="hero-title" variants={fadeInUp}>
-              Siente, Recuerda, Habita y Transforma
+              Siente, Recuerda, Transforma
             </motion.h1>
             <motion.p className="hero-subtitle" variants={fadeInUp}>
-              Bienvenido a este espacio de serenidad, autodescubrimiento y autoescucha. Aquí puedes detenerte, respirar y recordar tu camino de vuelta al bienestar y a la salud integral.
+              Bienvenidx a este espacio de acompañamiento terapéutico para tu autodescubrimiento, autoescucha y transformación profunda.
             </motion.p>
             <motion.div className="hero-buttons" variants={fadeInUp}>
               <Link to="/reservas" className="btn btn-primary btn-large">

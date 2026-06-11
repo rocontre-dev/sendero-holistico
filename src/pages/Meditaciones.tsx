@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import './Meditaciones.css'
-import meditationHero from '../assets/images/meditaciones/meditation-hero.jpg'
+import meditationHero from '../assets/images/home/meditation-garden.jpg'
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },

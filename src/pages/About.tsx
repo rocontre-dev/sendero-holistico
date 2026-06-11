@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import './About.css'
 import aboutHero from '../assets/images/about/about-hero.jpg'
 import aboutEmbrace from '../assets/images/about/about-embrace.jpg'
-import aboutPath from '../assets/images/about/about-path.jpg'
+import aboutPath from '../assets/images/home/home-contemplation.jpg'
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 20 },
@@ -44,8 +44,8 @@ function About() {
         </div>
         <div className="container">
           <blockquote className="hero-quote">
-            "Vete despacio que a donde tienes que llegar es a ti mismo"
-            <cite>— Rumi</cite>
+            "Quien olvida enferma, quien recuerda sana"
+            <cite>— Don Miguel Ruiz</cite>
           </blockquote>
           <h1 className="section-title">Sobre Mí</h1>
           <p className="section-subtitle">
@@ -182,7 +182,7 @@ function About() {
               <div className="journey-content card">
                 <h3>El Lenguaje del Cuerpo</h3>
                 <p>
-                  Aunque mi camino terapéutico comenzó años después, mi conexión con el cuerpo y su capacidad de autorregulación empezó mucho antes. Bailo desde los cinco años y el flamenco, junto con otros ritmos y estilos, ha sido una gran herramienta de autodescubrimiento y equilibrio emocional.
+                  Aunque mi camino terapéutico comenzó años después, mi conexión con el cuerpo y su capacidad de autorregulación empezó mucho antes. Bailo desde los cinco años y el flamenco, junto con otros ritmos y estilos, ha sido una gran herramienta de autorregulación y equilibrio emocional.
                 </p>
               </div>
             </motion.div>
@@ -206,8 +206,7 @@ function About() {
                 <h3>La Formación y el Acompañamiento</h3>
                 <p>
                   Comencé mi formación en Bioemoción y Movimiento Terapia. Entre 2021 y 2022 
-                  empecé a facilitar talleres de Movimiento Consciente y Danzaterapia con 
-                  distintos grupos. Estas experiencias confirmaron en mí el enorme impacto 
+                  empecé a facilitar talleres de Movimiento Consciente y Danzaterapia enfocados a distintos grupos, incluyendo diversidad funcional, personas con trastornos de ansiedad, adultos mayores y mujeres. Estas experiencias confirmaron en mí el enorme impacto 
                   que tiene el cuerpo y su energía en nuestra salud y bienestar.
                 </p>
               </div>
@@ -228,8 +227,7 @@ function About() {
               <div className="journey-content card">
                 <h3>Cuerpo y Trauma</h3>
                 <p>
-                  Comencé mi formación como terapeuta somática especializada en cuerpo y trauma, 
-                  inspirada por las enseñanzas de Peter Levine y Gabor Maté.
+                  Comencé mi formación como terapeuta somática especializada en cuerpo y trauma, con la guía del profesor Peter Levine (EmbodyLab) y la inspiración de Gabor Maté y Somatic Experiencing.
                 </p>
               </div>
             </motion.div>

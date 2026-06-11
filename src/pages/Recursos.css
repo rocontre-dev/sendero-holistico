@@ -1,7 +1,206 @@
 .recursos-hero {
-  background: linear-gradient(135deg, var(--color-background) 0%, var(--color-background-alt) 100%);
-  padding: 5rem 0 4rem;
+  position: relative;
+  min-height: 480px;
+  height: 52vh;
+  max-height: 540px;
+  overflow: hidden;
+  background-color: #faf7f2;
+}
+
+/* Desktop only: Background image for Recursos hero */
+@media (min-width: 1200px) {
+  .recursos-hero {
+    width: 100vw;
+    max-width: none;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+  }
+
+  .recursos-hero .hero-background {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+  }
+
+  .recursos-hero .hero-background .hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .recursos-hero .hero-background .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      to right,
+      rgba(255, 248, 240, 0.55),
+      rgba(255, 248, 240, 0.15)
+    );
+  }
+
+  /* Ensure content is above overlay */
+  .recursos-hero .container {
+    position: relative;
+    z-index: 2;
+    padding-top: 50px;
+  }
+
+  .recursos-hero .section-title {
+    font-size: clamp(3.5rem, 5vw, 5rem);
+    color: #2f241d;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 0;
+    max-width: none;
+  }
+
+  /* Decorador elegante */
+  .recursos-hero .hero-divider {
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: 20px;
+  }
+
+  .recursos-hero .hero-divider .divider-line {
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-terracotta));
+    margin: 0 8px;
+    vertical-align: middle;
+  }
+
+  .recursos-hero .hero-divider .divider-icon {
+    display: inline-block;
+    font-size: 1.2rem;
+    color: var(--color-primary);
+    vertical-align: middle;
+  }
+
+  .recursos-hero .recursos-hero-description {
+    position: absolute !important;
+    top: 175px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: max-content !important;
+    max-width: none !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    font-size: 1rem !important;
+    line-height: 1.8 !important;
+    color: #4f4a44 !important;
+    z-index: 3 !important;
+  }
+
+  /* Transición curva al final del hero */
+  .recursos-hero .curve-transition {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+  }
+
+  .recursos-hero .curve-transition svg {
+    display: block;
+    width: 100%;
+    height: 40px;
+  }
+}
+
+/* Resources Categories Section */
+.resources-categories {
+  background-color: #faf7f2;
+  padding: 32px 0 60px;
+}
+
+.resources-categories .section-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 3vw, 3rem);
+  font-weight: 400;
+  color: var(--color-sage);
   text-align: center;
+  margin-bottom: 0;
+}
+
+.resources-categories .section-divider {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.resources-categories .section-divider .line {
+  display: inline-block;
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-terracotta));
+  vertical-align: middle;
+  margin: 0 12px;
+}
+
+.resources-categories .section-divider .icon {
+  display: inline-block;
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  vertical-align: middle;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: clamp(32px, 4vw, 64px);
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.category-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  color: var(--color-sage);
+  transition: transform 0.25s ease, color 0.25s ease;
+  padding: 20px 0;
+}
+
+.category-button:hover {
+  transform: translateY(-4px);
+  color: var(--color-sage-dark);
+}
+
+.category-button svg {
+  margin-bottom: 16px;
+  stroke: currentColor;
+}
+
+.category-button span {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  line-height: 1.2;
+  color: #2f241d;
+}
+
+.category-button .category-line {
+  display: block;
+  width: 46px;
+  height: 1px;
+  background: rgba(47, 36, 29, 0.35);
+  margin-top: 12px;
+  transition: background 0.25s ease;
+}
+
+.category-button:hover .category-line {
+  background: rgba(47, 36, 29, 0.6);
 }
 
 .recursos-hero .section-title {
@@ -282,12 +481,32 @@
 @media (max-width: 1200px) {
   .resources-grid,
   .reflections-grid,
-  .free-resources-grid {
+  .free-resources-grid,
+  .categories-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 768px) {
+  .categories-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .category-button {
+    padding: 16px 0;
+  }
+
+  .category-button svg {
+    width: 36px;
+    height: 36px;
+    margin-bottom: 12px;
+  }
+
+  .category-button span {
+    font-size: 0.95rem;
+  }
+
   .recursos-hero {
     padding: 4rem 0 3rem;
   }

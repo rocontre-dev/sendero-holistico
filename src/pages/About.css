@@ -55,13 +55,14 @@
   display: block;
 }
 
-/* Hero Quote - Rumi - Updated for image background */
+/* Hero Quote - Updated for image background - Mejorado legibilidad */
 .about-hero .hero-quote {
   display: block;
-  font-family: var(--font-script);
+  font-family: var(--font-heading);
   font-size: 1.6rem;
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(255, 255, 255, 0.92);
   font-style: italic;
+  font-weight: 400;
   margin-bottom: var(--spacing-xl);
   max-width: 420px;
   margin-left: auto;
@@ -70,7 +71,8 @@
   padding-left: var(--spacing-lg);
   border-left: 2px solid rgba(255, 255, 255, 0.5);
   text-align: left;
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  letter-spacing: 0.01em;
 }
 
 .about-hero .hero-quote cite {
@@ -376,11 +378,10 @@
   margin-bottom: var(--spacing-xl);
 }
 
-/* Desktop and laptop - keep Rumi quote on single line */
+/* Desktop and laptop - improved readability */
 @media (min-width: 969px) {
   .about-hero .hero-quote {
     max-width: 700px;
-    white-space: nowrap;
   }
 }
 

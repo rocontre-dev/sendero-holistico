@@ -58,19 +58,21 @@
 
 .hero .hero-quote {
   display: block;
-  font-family: var(--font-script);
-  font-size: 1.4rem;
-  color: rgba(255, 255, 255, 0.85);
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.9);
   font-style: italic;
+  font-weight: 400;
   margin-bottom: var(--spacing-2xl);
   line-height: 1.6;
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  letter-spacing: 0.01em;
 }
 
-/* Ajuste de tamaño para desktop/laptop - Frase de Rumi */
+/* Ajuste de tamaño para desktop/laptop - Frase legible */
 @media (min-width: 1025px) {
   .hero .hero-quote {
-    font-size: 1.75rem;
+    font-size: 1.8rem;
   }
 }
 

@@ -165,15 +165,16 @@ h4 {
 
 p {
   margin-bottom: 1rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 
-/* Texto script para acentos */
+/* Texto script para acentos - Mejorado para legibilidad */
 .script-accent {
-  font-family: var(--font-script);
-  font-size: 1.5rem;
+  font-family: var(--font-body);
+  font-size: 1.1rem;
   color: var(--color-primary);
   font-style: italic;
+  font-weight: 500;
 }
 
 /* ============================================

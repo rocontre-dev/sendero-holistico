@@ -1,17 +1,110 @@
 import { Link } from 'react-router-dom'
 import './Recursos.css'
+import recursosHero from '../assets/images/recursos/recursos-hero.jpg'
 
 function Recursos() {
   return (
     <div className="recursos-page">
       {/* Hero Section */}
       <section className="recursos-hero">
+        <div className="hero-background">
+          <div 
+            className="hero-image"
+            style={{ backgroundImage: `url(${recursosHero})` }}
+            role="img"
+            aria-label="Recursos - espacio de prácticas y herramientas"
+          />
+          <div className="hero-overlay" />
+        </div>
         <div className="container">
-          <h1 className="section-title">Recursos para acompañarte</h1>
-          <p className="section-subtitle">
+          <h1 className="section-title">Recursos</h1>
+          <div className="hero-divider">
+            <span className="divider-line"></span>
+            <span className="divider-icon">🌿</span>
+            <span className="divider-line"></span>
+          </div>
+          <p className="section-subtitle recursos-hero-description">
             Meditaciones, prácticas y herramientas para cultivar presencia, 
             regulación emocional y bienestar integral.
           </p>
+        </div>
+        <div className="curve-transition">
+          <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+            <path d="M0,40 C360,80 1080,80 1440,40 L1440,80 L0,80 Z" fill="var(--color-cream)" />
+          </svg>
+        </div>
+      </section>
+
+      {/* Explora por categoría */}
+      <section className="resources-categories">
+        <div className="container">
+          <h2 className="section-title">Explora por categoría</h2>
+          <div className="section-divider">
+            <span className="line"></span>
+            <span className="icon">❧</span>
+            <span className="line"></span>
+          </div>
+          <div className="categories-grid">
+            <Link className="category-button" to="/meditaciones">
+              <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 2a7 7 0 0 0 0 14 7 7 0 0 0 0-14z"/>
+                <path d="M12 6v6l4 2"/>
+              </svg>
+              <span>Meditaciones</span>
+              <span className="category-line"></span>
+            </Link>
+
+            <Link className="category-button" to="/movimiento-consciente">
+              <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4">
+                <circle cx="12" cy="5" r="3"/>
+                <path d="M8 20l2-6h4l2 6"/>
+                <path d="M12 8v4"/>
+                <path d="M8 12h8"/>
+              </svg>
+              <span>Movimiento Consciente</span>
+              <span className="category-line"></span>
+            </Link>
+
+            <Link className="category-button" to="/habitar-emociones">
+              <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4">
+                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+              </svg>
+              <span>Habitar Emociones</span>
+              <span className="category-line"></span>
+            </Link>
+
+            <Link className="category-button" to="/bioemocion">
+              <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4">
+                <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v1.5a2.5 2.5 0 0 1-5 0V4.5A2.5 2.5 0 0 1 9.5 2z"/>
+                <path d="M14.5 2A2.5 2.5 0 0 1 17 4.5v1.5a2.5 2.5 0 0 1-5 0V4.5A2.5 2.5 0 0 1 14.5 2z"/>
+                <path d="M12 8a5 5 0 0 0-5 5v1a3 3 0 0 0 6 0v-1a5 5 0 0 0-5-5z"/>
+                <path d="M12 8a5 5 0 0 1 5 5v1a3 3 0 0 1-6 0v-1a5 5 0 0 1 5-5z"/>
+              </svg>
+              <span>Bioemoción</span>
+              <span className="category-line"></span>
+            </Link>
+
+            <Link className="category-button" to="/terapia-somatica">
+              <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4">
+                <circle cx="12" cy="12" r="10"/>
+                <circle cx="12" cy="12" r="6"/>
+                <circle cx="12" cy="12" r="2"/>
+              </svg>
+              <span>Cuerpo y Trauma</span>
+              <span className="category-line"></span>
+            </Link>
+
+            <Link className="category-button" to="/recursos">
+              <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4">
+                <path d="M12 2v20"/>
+                <path d="M12 2c-4 4-4 8 0 10s4 6 0 10"/>
+                <path d="M12 2c4 4 4 8 0 10s-4 6 0 10"/>
+              </svg>
+              <span>Crecimiento Personal</span>
+              <span className="category-line"></span>
+            </Link>
+          </div>
         </div>
       </section>
 
