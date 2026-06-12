@@ -2,6 +2,54 @@
    BIOEMOCIÓN ENERGÉTICA - DISEÑO EDITORIAL
    ============================================ */
 
+/* Hero Section */
+.bioemocion-page .service-hero {
+  position: relative;
+  min-height: 500px;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.bioemocion-page .service-hero .hero-background {
+  position: absolute;
+  inset: 0;
+}
+
+.bioemocion-page .service-hero .hero-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.bioemocion-page .service-hero .hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.25),
+    rgba(0, 0, 0, 0.35)
+  );
+}
+
+.bioemocion-page .service-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.bioemocion-page .service-hero .hero-title,
+.bioemocion-page .service-hero .hero-subtitle,
+.bioemocion-page .service-hero .section-tag {
+  color: #F8F4EC;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+
 /* Dimensions Grid */
 .dimensions-grid {
   display: grid;

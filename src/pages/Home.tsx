@@ -5,10 +5,11 @@ import homeHero from '../assets/images/home/home-contemplation.jpg'
 import aboutEmbrace from '../assets/images/about/about-embrace.jpg'
 import movimientoHero from '../assets/images/movimiento-consciente/movimiento-hero.jpg'
 import habitarHero from '../assets/images/habitar-emociones/habitar-emociones-hero.jpg'
-import aboutPath from '../assets/images/home/home-contemplation.jpg'
+import aboutPath from '../assets/images/about/about-path.jpg'
 import cosmosHero from '../assets/images/cosmos-corporeo/cosmos-hero.jpg'
 import meditationGarden from '../assets/images/home/meditation-garden.jpg'
 import retreatSunset from '../assets/images/home/retreat-sunset.jpg'
+import bioemocionHero from '../assets/images/consulta-terapeutica/bioemocion-hero.png'
 
 // Custom easing function - slower, more breathing
 const easeOutSmooth = [0.25, 0.1, 0.25, 1] as const
@@ -141,7 +142,7 @@ function Home() {
               <Link to="/bioemocion" className="servicio-link">
                 <div className="servicio-image-frame">
                   <img 
-                    src={aboutPath} 
+                    src={bioemocionHero} 
                     alt="Consulta Bioemoción"
                     className="servicio-image"
                     loading="lazy"

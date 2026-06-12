@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import './Bioemocion.css'
+import bioemocionHero from '../assets/images/consulta-terapeutica/bioemocion-hero.png'
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
@@ -28,8 +29,13 @@ function Bioemocion() {
       {/* Hero Section */}
       <section className="service-hero">
         <div className="hero-background">
-          <div className="hero-blob hero-blob-1"></div>
-          <div className="hero-blob hero-blob-2"></div>
+          <div 
+            className="hero-image"
+            style={{ backgroundImage: `url(${bioemocionHero})` }}
+            role="img"
+            aria-label="Bioemoción y consulta terapéutica"
+          ></div>
+          <div className="hero-overlay"></div>
         </div>
         <div className="container">
           <motion.div
