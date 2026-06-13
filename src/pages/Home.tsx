@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import './Home.css'
-import homeHero from '../assets/images/home/home-contemplation.jpg'
+import homeHeroForest from '../assets/images/home/home-hero-forest.png'
 import aboutEmbrace from '../assets/images/about/about-embrace.jpg'
 import movimientoHero from '../assets/images/movimiento-consciente/movimiento-hero.jpg'
 import habitarHero from '../assets/images/habitar-emociones/habitar-emociones-hero.jpg'
@@ -43,9 +43,9 @@ function Home() {
         <div className="hero-background">
           <div 
             className="hero-image"
-            style={{ backgroundImage: `url(${homeHero})` }}
+            style={{ backgroundImage: `url(${homeHeroForest})` }}
             role="img"
-            aria-label="Ivanna en conexión con la naturaleza"
+            aria-label="Sendero en el bosque - conexión con la naturaleza"
           ></div>
           <div className="hero-overlay"></div>
         </div>
@@ -56,22 +56,20 @@ function Home() {
             animate="visible"
             variants={staggerContainer}
           >
-            <motion.blockquote className="hero-quote" variants={fadeInUp}>
-              "Quien olvida enferma, quien recuerda sana"
-              <cite>— Don Miguel Ruiz</cite>
-            </motion.blockquote>
             <motion.h1 className="hero-title" variants={fadeInUp}>
-              Siente, Recuerda, Transforma
+              Sendero<br />Holístico
             </motion.h1>
-            <motion.p className="hero-subtitle" variants={fadeInUp}>
-              Bienvenidx a este espacio de acompañamiento terapéutico para tu autodescubrimiento, autoescucha y transformación profunda.
+            <motion.div className="hero-divider" variants={fadeInUp}>
+              <span className="divider-line"></span>
+              <span className="divider-leaf">✦</span>
+              <span className="divider-line"></span>
+            </motion.div>
+            <motion.p className="hero-description" variants={fadeInUp}>
+              Un espacio para tu bienestar integral a través del movimiento, la bioemoción y la conexión contigo.
             </motion.p>
-            <motion.div className="hero-buttons" variants={fadeInUp}>
-              <Link to="/reservas" className="btn btn-primary btn-large">
-                Reservar sesión
-              </Link>
-              <Link to="/sobre-mi" className="btn btn-outline btn-large">
-                Conoce mi enfoque
+            <motion.div className="hero-actions" variants={fadeInUp}>
+              <Link to="/sobre-mi" className="btn btn-hero-primary">
+                CONOCE MÁS
               </Link>
             </motion.div>
           </motion.div>
