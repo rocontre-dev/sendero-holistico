@@ -88,7 +88,7 @@ function Header() {
               <ul className="dropdown-menu">
                 <li><NavLink to="/movimiento-consciente" onClick={closeMenu} className="dropdown-link">Movimiento Consciente</NavLink></li>
                 <li><NavLink to="/habitar-emociones" onClick={closeMenu} className="dropdown-link">Habitar Emociones</NavLink></li>
-                <li><NavLink to="/bioemocion" onClick={closeMenu} className="dropdown-link">Consulta Bioemoción</NavLink></li>
+                <li><NavLink to="/bioemocion" onClick={closeMenu} className="dropdown-link">Consulta Terapéutica</NavLink></li>
                 <li><NavLink to="/cosmos-corporeo" onClick={closeMenu} className="dropdown-link">Cosmos Corpóreo</NavLink></li>
                 <li><NavLink to="/meditaciones" onClick={closeMenu} className="dropdown-link">Meditaciones Guiadas</NavLink></li>
                 <li className="dropdown-divider"></li>

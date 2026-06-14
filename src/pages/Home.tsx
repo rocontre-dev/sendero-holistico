@@ -59,13 +59,14 @@ function Home() {
             <motion.h1 className="hero-title" variants={fadeInUp}>
               Sendero<br />Holístico
             </motion.h1>
-            <motion.div className="hero-divider" variants={fadeInUp}>
-              <span className="divider-line"></span>
-              <span className="divider-leaf">✦</span>
-              <span className="divider-line"></span>
-            </motion.div>
+            <motion.p className="hero-keywords" variants={fadeInUp}>
+              Siente · Recuerda · Transforma
+            </motion.p>
+            <motion.p className="hero-quote" variants={fadeInUp}>
+              "Quien olvida enferma, quien recuerda sana"
+            </motion.p>
             <motion.p className="hero-description" variants={fadeInUp}>
-              Un espacio para tu bienestar integral a través del movimiento, la bioemoción y la conexión contigo.
+              Bienvenidx a este espacio de acompañamiento terapéutico para tu autodescubrimiento, autoescucha y transformación profunda.
             </motion.p>
             <motion.div className="hero-actions" variants={fadeInUp}>
               <Link to="/sobre-mi" className="btn btn-hero-primary">
@@ -135,20 +136,20 @@ function Home() {
             viewport={{ once: true, margin: "-100px" }}
             variants={staggerContainer}
           >
-            {/* Consulta Bioemoción (Prioridad 1) */}
+            {/* Consulta Terapéutica (Prioridad 1) */}
             <motion.div className="servicio-card" variants={fadeInUp}>
               <Link to="/bioemocion" className="servicio-link">
                 <div className="servicio-image-frame">
                   <img 
                     src={bioemocionHero} 
-                    alt="Consulta Bioemoción"
+                    alt="Consulta Terapéutica"
                     className="servicio-image"
                     loading="lazy"
                   />
                 </div>
                 <div className="servicio-content">
                   <span className="servicio-tag">Consultas y Sesiones</span>
-                  <h3>Consulta Bioemoción</h3>
+                  <h3>Consulta Terapéutica</h3>
                   <p>
                     Acompañamiento terapéutico individual de sanación psicoemocional 
                     con enfoque integrativo.

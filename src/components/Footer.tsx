@@ -51,7 +51,7 @@ function Footer() {
             <ul className="footer-list">
               <li><Link to="/movimiento-consciente">Movimiento Consciente</Link></li>
               <li><Link to="/habitar-emociones">Habitar Emociones</Link></li>
-              <li><Link to="/bioemocion">Consulta Bioemoción</Link></li>
+              <li><Link to="/bioemocion">Consulta Terapéutica</Link></li>
               <li><Link to="/cosmos-corporeo">Cosmos Corpóreo</Link></li>
               <li><Link to="/meditaciones">Meditaciones Guiadas</Link></li>
             </ul>

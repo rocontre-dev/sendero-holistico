@@ -79,7 +79,7 @@ function Bioemocion() {
               <h2>Un Espacio de Transformación Profunda</h2>
               <div className="about-divider"></div>
               <p>
-                La Consulta Bioemoción Energética es un espacio terapéutico individual 
+                La Consulta Terapéutica es un espacio terapéutico individual 
                 donde integramos el trabajo emocional, energético y corporal para 
                 acompañarte en tu proceso de transformación personal.
               </p>

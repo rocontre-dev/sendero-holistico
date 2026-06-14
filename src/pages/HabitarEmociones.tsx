@@ -78,7 +78,7 @@ function HabitarEmociones() {
           >
             <motion.div className="intro-content" variants={fadeInUp}>
               <span className="intro-eyebrow">CUERPO · EMOCIÓN · CONSCIENCIA</span>
-              <h2>Aprender a sentir es volver a escucharte.</h2>
+              <h2>Aprender a sentir es aprender a vivir plenamente.</h2>
               <div className="about-divider"></div>
               <p className="intro-description">
                 A través del trabajo somático y la presencia consciente, cultivamos 
