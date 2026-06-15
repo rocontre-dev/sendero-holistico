@@ -345,7 +345,7 @@ function Acompanamiento() {
                 Agenda una Sesión
               </Link>
               <Link to="/sobre-mi" className="btn btn-outline btn-large">
-                Conóceme Más
+                Conóceme
               </Link>
             </motion.div>
           </motion.div>
