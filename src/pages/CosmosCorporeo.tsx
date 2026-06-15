@@ -277,12 +277,11 @@ function CosmosCorporeo() {
             variants={staggerContainer}
           >
             <motion.div className="includes-item" variants={fadeInUp}>
-              <span className="includes-icon">📊</span>
+              <span className="includes-icon">🌿</span>
               <div className="includes-content">
-                <h3>Análisis Completo del BodyGraph</h3>
+                <h3>Diseño Humano</h3>
                 <p>
-                  Exploramos juntos tu Diseño Humano completo, sintiendo en el 
-                  cuerpo cada aspecto y cómo se expresa en tu vida.
+                  Descubre tu diseño humano y una nueva forma de comprender tu energía y tus talentos.
                 </p>
               </div>
             </motion.div>
@@ -290,36 +289,24 @@ function CosmosCorporeo() {
             <motion.div className="includes-item" variants={fadeInUp}>
               <span className="includes-icon">🌙</span>
               <div className="includes-content">
-                <h3>Lectura de Carta Astral</h3>
+                <h3>Carta Natal Chamánica</h3>
                 <p>
-                  Interpretamos tu carta natal desde una perspectiva chamánica, 
-                  conectando con la sabiduría simbólica de los planetas.
-                </p>
-              </div>
-            </motion.div>
-
-            <motion.div className="includes-item" variants={fadeInUp}>
-              <span className="includes-icon">🎯</span>
-              <div className="includes-content">
-                <h3>Guía de Propósito y Talentos</h3>
-                <p>
-                  Identificamos tus talentos únicos y cómo expresarlos en tu 
-                  vida profesional y personal de manera alineada.
-                </p>
-              </div>
-            </motion.div>
-
-            <motion.div className="includes-item" variants={fadeInUp}>
-              <span className="includes-icon">📝</span>
-              <div className="includes-content">
-                <h3>Grabación de la Sesión</h3>
-                <p>
-                  Recibes la grabación completa para que puedas volver a escuchar 
-                  y seguir integrando la sabiduría revelada.
+                  Una lectura simbólica para reconectar con tu propósito y tu camino de vida.
                 </p>
               </div>
             </motion.div>
           </motion.div>
+
+          <motion.p 
+            className="includes-note"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={fadeInUp}
+            style={{ textAlign: 'center', marginTop: '2rem', opacity: 0.8 }}
+          >
+            Puedes elegir entre una lectura de Diseño Humano o una Carta Natal Chamánica.
+          </motion.p>
         </div>
       </section>
 

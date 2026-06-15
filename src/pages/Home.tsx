@@ -282,7 +282,8 @@ function Home() {
             variants={staggerContainer}
           >
             <motion.blockquote className="contemplativa-quote" variants={fadeInUp}>
-              "Todo proceso comienza cuando aprendemos a escucharnos."
+              "Vete despacio, que a donde tienes que llegar es a ti mismx."
+              <footer>— Rumi</footer>
             </motion.blockquote>
           </motion.div>
         </div>

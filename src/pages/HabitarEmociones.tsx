@@ -127,12 +127,10 @@ function HabitarEmociones() {
           >
             <motion.div className="step-card card-soft" variants={fadeInUp}>
               <div className="step-number">01</div>
-              <div className="step-icon">🫀</div>
+              <div className="step-icon">❤️</div>
               <h3>Sentir</h3>
               <p>
-                Aprendemos a detectar las sensaciones corporales que acompañan 
-                cada emoción. ¿Dónde la sientes? ¿Cómo se manifiesta? 
-                Desarrollamos la capacidad de estar con la sensación sin juicio.
+                Ubicamos las emociones y las sensaciones corporales con presencia y escucha.
               </p>
             </motion.div>
 
@@ -141,9 +139,7 @@ function HabitarEmociones() {
               <div className="step-icon">🧭</div>
               <h3>Comprender</h3>
               <p>
-                Exploramos el mensaje de cada emoción. La ira nos habla de límites, 
-                la tristeza de pérdidas, el miedo de protección. Cada emoción tiene 
-                información valiosa sobre lo que necesitamos.
+                Exploramos el mensaje que cada emoción trae consigo.
               </p>
             </motion.div>
 
@@ -152,9 +148,7 @@ function HabitarEmociones() {
               <div className="step-icon">🌊</div>
               <h3>Regular</h3>
               <p>
-                Desarrollamos herramientas prácticas para regular el sistema 
-                nervioso: respiración, grounding, movimiento, voz. Aprendemos 
-                a canalizar la energía emocional de manera consciente.
+                Cultivamos recursos para acompañar lo que sentimos y volver a la calma.
               </p>
             </motion.div>
           </motion.div>
