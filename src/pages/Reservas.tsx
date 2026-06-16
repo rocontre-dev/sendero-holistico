@@ -159,7 +159,7 @@ function Reservas() {
             <motion.div className="beneficio-item" variants={scaleIn}>
               <span className="beneficio-icon">🛡️</span>
               <h4>Espacio Seguro</h4>
-              <p>Un entorno de autoescucha, sin juicios, donde puedes ser tú misma.</p>
+              <p>Un entorno de autoescucha, sin juicios, donde puedes ser tú mism@.</p>
             </motion.div>
           </motion.div>
         </div>
@@ -203,7 +203,7 @@ function Reservas() {
             </motion.h2>
             <motion.p className="section-subtitle" variants={fadeInUp}>
               Cada experiencia está diseñada para acompañarte en tu proceso
-              de autoescucha, regulación emocional y reconexión contigo misma.
+              de autoescucha, regulación emocional y reconexión contigo mism@.
             </motion.p>
           </motion.div>
 
@@ -335,7 +335,7 @@ function Reservas() {
             </motion.h2>
             <motion.p className="cta-text" variants={fadeInUp}>
               No necesitas tener todas las respuestas. Solo necesitas dar el
-              primer paso hacia ti misma. Estoy aquí para sostenerte en este
+              primer paso hacia ti mism@. Estoy aquí para sostenerte en este
               viaje de reconexión y sanación.
             </motion.p>
             <motion.div variants={fadeInUp}>

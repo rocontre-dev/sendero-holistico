@@ -81,7 +81,7 @@ function Circulos() {
               <p>
                 Desde tiempos inmemoriales, los círculos ceremoniales han sido el 
                 corazón de las comunidades. En círculo nos reunimos para celebrar, 
-                sanar, honrar y conectar con algo más grande que nosotros mismas.
+                sanar, honrar y conectar con algo más grande que nosotros mism@s.
               </p>
               <p>
                 En Sendero Holístico, creamos espacios seguros y sagrados donde 

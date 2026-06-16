@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import './About.css'
 import aboutHero from '../assets/images/about/about-hero.jpg'
-import aboutEmbrace from '../assets/images/about/about-embrace.jpg'
+import aboutEmbrace from '../assets/images/about/about-profile-secondary.jpg'
 import aboutPath from '../assets/images/home/home-contemplation.jpg'
 
 const fadeInUp = {
@@ -68,7 +68,7 @@ function About() {
               <h2>Hola, soy <span className="highlight">Ivanna</span></h2>
               <p>
                 Soy terapeuta holística y mi misión es acompañarte en tu proceso 
-                de transformación profunda y reconexión contigo misma.
+                de transformación profunda y reconexión contigo mism@.
               </p>
               <p>
                 En mí encontrarás un acompañamiento cercano, sensible y humano 
@@ -148,7 +148,7 @@ function About() {
             variants={staggerContainer}
           >
             <span className="section-tag">Mi Camino</span>
-            <h2 className="section-title">Cómo Llegué Hasta Aquí</h2>
+            <h2 className="section-title">Cómo llegué hasta aquí</h2>
             <p className="section-subtitle">
               Mi propia búsqueda interior me llevó a descubrir las herramientas 
               que hoy comparto contigo
@@ -165,7 +165,7 @@ function About() {
             <motion.div className="journey-item" variants={fadeInUp}>
               <div className="journey-year">2016</div>
               <div className="journey-content card">
-                <h3>El Inicio de Mi Búsqueda</h3>
+                <h3>Mi Búsqueda</h3>
                 <p>
                   Dos años después de graduarme de Derecho, recibí un diagnóstico 
                   médico que marcó un antes y un después en mi vida. Aquella experiencia 
@@ -374,6 +374,11 @@ function About() {
             <motion.div className="credential-item card" variants={fadeInUp}>
               <h3>Coach especialista en Terapia Narrativa Sincrónica de Gustav Jung</h3>
               <p>Escuela de Arquetipos y Terapia Narrativa Sincrónica — Actualidad</p>
+            </motion.div>
+
+            <motion.div className="credential-item card" variants={fadeInUp}>
+              <h3>Somatic Therapist: Body & Trauma</h3>
+              <p>Embody Lab, California — 2024–2025</p>
             </motion.div>
           </motion.div>
         </div>

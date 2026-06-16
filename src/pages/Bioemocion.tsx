@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import './Bioemocion.css'
-import bioemocionHero from '../assets/images/consulta-terapeutica/bioemocion-hero.png'
+import bioemocionHero from '../assets/images/consulta-terapeutica/consulta-terapeutica-hero.jpg'
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
@@ -169,7 +169,7 @@ function Bioemocion() {
             variants={staggerContainer}
           >
             <span className="section-tag">¿Es para ti?</span>
-            <h2 className="section-title">Esta Consulta es Ideal Si...</h2>
+            <h2 className="section-title">Esta consulta es ideal si...</h2>
           </motion.div>
 
           <motion.div 

@@ -97,7 +97,7 @@ function Serenidad() {
               </p>
               <p>
                 No se trata de luchar contra lo que sientes, sino de aprender a estar 
-                contigo misma desde la compasión y la aceptación, permitiendo que la 
+                contigo mism@ desde la compasión y la aceptación, permitiendo que la 
                 sanación ocurra de manera natural y orgánica.
               </p>
             </motion.div>
@@ -178,7 +178,7 @@ function Serenidad() {
               <div className="benefit-icon">💖</div>
               <h3>Paz Interior</h3>
               <p>
-                Cultivas una relación más serena contigo misma y con la vida, 
+                Cultivas una relación más serena contigo mism@ y con la vida, 
                 encontrando espacios de quietud en medio del caos.
               </p>
             </motion.div>

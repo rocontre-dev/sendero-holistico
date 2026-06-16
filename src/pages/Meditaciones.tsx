@@ -58,7 +58,7 @@ function Meditaciones() {
     {
       icon: '💖',
       title: 'Autocompasión',
-      description: 'Prácticas de bondad amorosa para cultivar una relación más amable contigo misma.',
+      description: 'Prácticas de bondad amorosa para cultivar una relación más amable contigo mism@.',
       duration: '10-20 min'
     }
   ]

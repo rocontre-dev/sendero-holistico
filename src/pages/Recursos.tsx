@@ -119,7 +119,7 @@ function Recursos() {
               autoconocimiento y bienestar.
             </p>
             <p className="intro-text">
-              Te invito a explorar estas prácticas con curiosidad y compasión hacia ti mismo. 
+              Te invito a explorar estas prácticas con curiosidad y compasión hacia ti mism@. 
               Encuentra aquellas que más resuenen contigo y permítete integrarlas a tu propio ritmo.
             </p>
           </div>
@@ -286,7 +286,7 @@ function Recursos() {
               </div>
               <h3>Autoescucha</h3>
               <p className="resource-description">
-                Prácticas para desarrollar la capacidad de escucharte a ti mismo, 
+                Prácticas para desarrollar la capacidad de escucharte a ti mism@, 
                 reconocer tus necesidades y validar tus emociones.
               </p>
               <div className="resource-placeholder">

@@ -336,7 +336,7 @@ function Acompanamiento() {
               ¿Lista para embarcarte en este viaje?
             </motion.h2>
             <motion.p className="cta-text" variants={fadeInUp}>
-              El Acompañamiento Holístico es un compromiso profundo contigo misma. 
+              El Acompañamiento Holístico es un compromiso profundo contigo mism@. 
               Si sientes el llamado a transformar tu vida y reconectar con tu esencia, 
               estoy aquí para guiarte en este camino sagrado.
             </motion.p>

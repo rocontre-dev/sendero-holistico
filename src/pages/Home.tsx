@@ -125,7 +125,7 @@ function Home() {
             <h2 className="section-title">Caminos de Reconexión</h2>
             <p className="section-subtitle">
               Cada experiencia está diseñada para acompañarte en tu proceso 
-              de autoescucha, regulación emocional y reconexión contigo misma.
+              de autoescucha, regulación emocional y reconexión contigo mism@.
             </p>
           </motion.div>
 
@@ -256,7 +256,7 @@ function Home() {
               <div className="about-divider"></div>
               <p>
                 Soy terapeuta holística y mi misión es acompañarte en tu proceso 
-                de transformación profunda y reconexión contigo misma.
+                de transformación profunda y reconexión contigo mism@.
               </p>
               <p>
                 En mí encontrarás un acompañamiento cercano, sensible y humano 
