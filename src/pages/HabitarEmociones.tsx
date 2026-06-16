@@ -231,7 +231,7 @@ function HabitarEmociones() {
               Permíteme acompañarte en este viaje interior
             </motion.h2>
             <motion.p className="cta-text" variants={fadeInUp}>
-              No tienes que hacerlo sola. En un espacio contenido y compasivo, 
+              No tienes que hacerlo sol@. En un espacio contenido y compasivo, 
               podemos explorar juntas tu mundo emocional, desarrollando las 
               herramientas para habitarlo con mayor seguridad y sabiduría.
             </motion.p>

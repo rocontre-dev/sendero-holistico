@@ -76,7 +76,7 @@ function Bioemocion() {
           >
             <motion.div className="intro-content" variants={fadeInUp}>
               <span className="section-tag">¿Qué es?</span>
-              <h2>Un Espacio de Transformación Profunda</h2>
+              <h2>Un Espacio de Transformación</h2>
               <div className="about-divider"></div>
               <p>
                 La Consulta Terapéutica es un espacio terapéutico individual 
@@ -229,7 +229,7 @@ function Bioemocion() {
               Permíteme acompañarte en este camino
             </motion.h2>
             <motion.p className="cta-text" variants={fadeInUp}>
-              No tienes que hacerlo sola. En un espacio seguro y compasivo, 
+              No tienes que hacerlo sol@. En un espacio seguro y compasivo, 
               podemos explorar juntas lo que necesitas sanar y transformar. 
               Cada paso cuenta, cada proceso es válido.
             </motion.p>

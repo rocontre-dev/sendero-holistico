@@ -159,26 +159,30 @@ function Contacto() {
                 <div className="info-card card">
                   <div className="info-icon">📍</div>
                   <h3>Ubicación</h3>
-                  <p>Consultorio Privado</p>
-                  <p className="info-note">Ciudad de México (dirección exacta al agendar)</p>
+                  <p>Granada, España</p>
+                  <p className="info-note">Atención presencial y acompañamiento online en todo el mundo</p>
                 </div>
 
                 <div className="info-card card">
                   <div className="info-icon">🕐</div>
                   <h3>Horarios</h3>
-                  <p>Lunes a Sábado</p>
-                  <p className="info-note">9:00 AM - 8:00 PM</p>
+                  <p>Lunes a viernes: 10:00–20:00 h</p>
+                  <p className="info-note">Sábados: según disponibilidad</p>
                 </div>
               </div>
 
               <div className="additional-info card">
                 <h3>¿Qué sucede después de enviar el formulario?</h3>
-                <ol>
-                  <li>Recibirás un correo de confirmación de que tu mensaje fue enviado.</li>
-                  <li>Me pondré en contacto contigo en un plazo de 24-48 horas.</li>
-                  <li>Coordinaremos una llamada breve de 15 minutos para conocernos y aclarar dudas.</li>
-                  <li>Si decidimos trabajar juntas, agendaremos tu primera sesión.</li>
-                </ol>
+                <div className="steps-container">
+                  <div className="step">
+                    <h4>Recibo tu mensaje</h4>
+                    <p>Reviso tu solicitud para comprender qué tipo de acompañamiento estás buscando.</p>
+                  </div>
+                  <div className="step">
+                    <h4>Coordinamos la sesión</h4>
+                    <p>Me pondré en contacto contigo en un plazo de 24–48 h para coordinar y agendar nuestra primera sesión.</p>
+                  </div>
+                </div>
               </div>
 
               <div className="reservas-cta card">

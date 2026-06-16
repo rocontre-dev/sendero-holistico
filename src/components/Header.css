@@ -400,6 +400,21 @@
     display: none;
   }
 
+  /* Override hover de desktop para tablet/mobile */
+  .nav-item-dropdown:hover .dropdown-menu,
+  .nav-item-dropdown:focus-within .dropdown-menu {
+    position: static;
+    transform: none;
+    box-shadow: none;
+    opacity: 1;
+    visibility: visible;
+    padding: 0 0 0 1rem;
+    border: none;
+    background: transparent;
+    display: block;
+    pointer-events: auto;
+  }
+
   .dropdown-menu {
     position: static;
     transform: none;

@@ -391,7 +391,7 @@ function Home() {
             variants={staggerContainer}
           >
             <motion.span className="cta-tagline" variants={fadeInUp}>
-              No estás sola en este camino
+              No estás sol@ en este camino
             </motion.span>
             <motion.h2 className="cta-title" variants={fadeInUp}>
               ¿Te gustaría comenzar?

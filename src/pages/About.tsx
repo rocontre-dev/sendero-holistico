@@ -352,33 +352,28 @@ function About() {
             variants={staggerContainer}
           >
             <motion.div className="credential-item card" variants={fadeInUp}>
-              <h3>Terapia Bioenergética</h3>
-              <p>Instituto Internacional de Bioenergía - 500 horas</p>
+              <h3>Coach en Biodescodificación Energética</h3>
+              <p>Holistica Group College, Argentina — 2020–2022</p>
             </motion.div>
 
             <motion.div className="credential-item card" variants={fadeInUp}>
-              <h3>Diseño Humano</h3>
-              <p>Human Design School - Lectora Certificada</p>
+              <h3>Programa Astrochamánica</h3>
+              <p>Paloma Cumplido — 2024–2026</p>
             </motion.div>
 
             <motion.div className="credential-item card" variants={fadeInUp}>
-              <h3>Terapia Somática</h3>
-              <p>Centro de Terapia Somática - 400 horas</p>
+              <h3>Astrología Mundial</h3>
+              <p>José Millán — 2024–2025</p>
             </motion.div>
 
             <motion.div className="credential-item card" variants={fadeInUp}>
-              <h3>Mindfulness y Meditación</h3>
-              <p>Centro de Atención Plena - Instructora Certificada</p>
+              <h3>Astrología Psicológica</h3>
+              <p>Juan Carlos Gómez — 2025–2026</p>
             </motion.div>
 
             <motion.div className="credential-item card" variants={fadeInUp}>
-              <h3>Psicología Transpersonal</h3>
-              <p>Instituto de Psicología Transpersonal - Maestría</p>
-            </motion.div>
-
-            <motion.div className="credential-item card" variants={fadeInUp}>
-              <h3>Sanación Energética</h3>
-              <p>Escuela de Medicina Energética - 300 horas</p>
+              <h3>Coach especialista en Terapia Narrativa Sincrónica de Gustav Jung</h3>
+              <p>Escuela de Arquetipos y Terapia Narrativa Sincrónica — Actualidad</p>
             </motion.div>
           </motion.div>
         </div>
@@ -402,7 +397,7 @@ function About() {
             </motion.h2>
             <motion.p className="cta-text" variants={fadeInUp}>
               Estoy aquí para acompañarte en tu proceso de sanación y crecimiento. 
-              No tienes que hacerlo sola. Agenda una sesión y comencemos este 
+              No tienes que hacerlo sol@. Agenda una sesión y comencemos este 
               viaje.
             </motion.p>
               <motion.div className="cta-buttons" variants={fadeInUp}>

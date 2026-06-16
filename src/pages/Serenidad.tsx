@@ -352,7 +352,7 @@ function Serenidad() {
               Permíteme acompañarte hacia la serenidad
             </motion.h2>
             <motion.p className="cta-text" variants={fadeInUp}>
-              No tienes que cargar con todo esto sola. En un espacio seguro y 
+              No tienes que cargar con todo esto sol@. En un espacio seguro y 
               compasivo, podemos trabajar juntas para liberar lo que ya no te sirve 
               y reconectar con tu esencia serena.
             </motion.p>

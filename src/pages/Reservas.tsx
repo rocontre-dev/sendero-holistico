@@ -10,37 +10,37 @@ const GOOGLE_FORM_URL =
 // ============================================
 // DATOS DE SERVICIOS
 // ============================================
-const servicios = [
-  {
-    id: 'consulta-terapeutica',
-    nombre: 'Consulta Terapéutica',
-    descripcion: 'Acompañamiento terapéutico individual de sanación psicoemocional con enfoque integrativo de Bioemoción Energética, Somática Cuerpo & Trauma, y Terapia Sistémica & Jungiana.',
-    duracion: '60 minutos',
-    modalidad: 'Online o presencial',
-    icono: '✨',
-    botonTexto: 'Solicitar cita',
-    numero: '01'
-  },
-  {
-    id: 'cosmos-corporeo',
-    nombre: 'Cosmos Corpóreo',
-    descripcion: 'Consulta 1:1 para conocer tu Carta Natal Chamánica y Diseño Humano, descubriendo tu propósito, talentos, desafíos y mapa energético único.',
-    duracion: '1 hora 45 minutos',
-    modalidad: 'Online o presencial',
-    icono: '🌟',
-    botonTexto: 'Solicitar cita',
-    numero: '02'
-  },
-  {
-    id: 'habitar-emociones',
-    nombre: 'Habitar Emociones',
-    descripcion: 'Programa de experiencia somática para aprender a sentir, escuchar y canalizar las emociones. El cuerpo como brújula interior.',
-    duracion: 'Por definir',
-    modalidad: 'Online o presencial',
-    icono: '💖',
-    botonTexto: 'Solicitar información',
-    numero: '03'
-  },
+  const servicios = [
+    {
+      id: 'consulta-terapeutica',
+      nombre: 'Consulta Terapéutica',
+      descripcion: 'Acompañamiento terapéutico individual de sanación psicoemocional con enfoque integrativo de Bioemoción Energética, Somática Cuerpo & Trauma, y Terapia Sistémica & Jungiana.',
+      duracion: '75 minutos',
+      modalidad: 'Online o presencial',
+      icono: '✨',
+      botonTexto: 'Solicitar cita',
+      numero: '01'
+    },
+    {
+      id: 'cosmos-corporeo',
+      nombre: 'Cosmos Corpóreo',
+      descripcion: 'Consulta 1:1 para conocer tu Carta Natal Chamánica y Diseño Humano, descubriendo tu propósito, talentos, desafíos y mapa energético único.',
+      duracion: '90 minutos',
+      modalidad: 'Online o presencial',
+      icono: '🌟',
+      botonTexto: 'Solicitar cita',
+      numero: '02'
+    },
+    {
+      id: 'habitar-emociones',
+      nombre: 'Habitar Emociones',
+      descripcion: 'Programa de experiencia somática para aprender a sentir, escuchar y canalizar las emociones. El cuerpo como brújula interior.',
+      duracion: '60 minutos',
+      modalidad: 'Online o presencial',
+      icono: '💖',
+      botonTexto: 'Solicitar información',
+      numero: '03'
+    },
   {
     id: 'movimiento-consciente',
     nombre: 'Movimiento Consciente',
