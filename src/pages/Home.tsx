@@ -2,14 +2,14 @@ import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import './Home.css'
 import homeHeroForest from '../assets/images/home/home-hero-forest.png'
-import aboutEmbrace from '../assets/images/about/about-embrace.jpg'
+import aboutProfileSecondary from '../assets/images/about/about-profile-secondary.jpg'
 import movimientoHero from '../assets/images/movimiento-consciente/movimiento-hero.jpg'
 import habitarHero from '../assets/images/habitar-emociones/habitar-emociones-hero.jpg'
 import aboutPath from '../assets/images/about/about-path.jpg'
 import cosmosHero from '../assets/images/cosmos-corporeo/cosmos-hero.jpg'
 import meditationGarden from '../assets/images/home/meditation-garden.jpg'
 import retreatSunset from '../assets/images/home/retreat-sunset.jpg'
-import bioemocionHero from '../assets/images/consulta-terapeutica/bioemocion-hero.png'
+import consultaTerapeuticaHero from '../assets/images/consulta-terapeutica/consulta-terapeutica-hero.jpg'
 
 // Custom easing function - slower, more breathing
 const easeOutSmooth = [0.25, 0.1, 0.25, 1] as const
@@ -141,7 +141,7 @@ function Home() {
               <Link to="/bioemocion" className="servicio-link">
                 <div className="servicio-image-frame">
                   <img 
-                    src={bioemocionHero} 
+                    src={consultaTerapeuticaHero} 
                     alt="Consulta Terapéutica"
                     className="servicio-image"
                     loading="lazy"
@@ -243,7 +243,7 @@ function Home() {
             <motion.div className="sobre-mi-image" variants={fadeInUp}>
               <div className="image-frame">
                 <img 
-                  src={aboutEmbrace} 
+                  src={aboutProfileSecondary} 
                   alt="Ivanna - terapeuta holística"
                   className="image-real"
                   loading="lazy"

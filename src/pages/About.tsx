@@ -357,13 +357,18 @@ function About() {
             </motion.div>
 
             <motion.div className="credential-item card" variants={fadeInUp}>
-              <h3>Programa Astrochamánica</h3>
-              <p>Paloma Cumplido — 2024–2026</p>
+              <h3>Somatic Therapist: Body & Trauma</h3>
+              <p>Embody Lab, California — 2024–2025</p>
             </motion.div>
 
             <motion.div className="credential-item card" variants={fadeInUp}>
               <h3>Astrología Mundial</h3>
               <p>José Millán — 2024–2025</p>
+            </motion.div>
+
+            <motion.div className="credential-item card" variants={fadeInUp}>
+              <h3>Programa Astrochamánica</h3>
+              <p>Paloma Cumplido — 2024–2026</p>
             </motion.div>
 
             <motion.div className="credential-item card" variants={fadeInUp}>
@@ -374,11 +379,6 @@ function About() {
             <motion.div className="credential-item card" variants={fadeInUp}>
               <h3>Coach especialista en Terapia Narrativa Sincrónica de Gustav Jung</h3>
               <p>Escuela de Arquetipos y Terapia Narrativa Sincrónica — Actualidad</p>
-            </motion.div>
-
-            <motion.div className="credential-item card" variants={fadeInUp}>
-              <h3>Somatic Therapist: Body & Trauma</h3>
-              <p>Embody Lab, California — 2024–2025</p>
             </motion.div>
           </motion.div>
         </div>

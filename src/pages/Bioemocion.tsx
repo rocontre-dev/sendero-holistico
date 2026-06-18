@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import './Bioemocion.css'
 import bioemocionHero from '../assets/images/consulta-terapeutica/consulta-terapeutica-hero.jpg'
+import consultaTransformacion from '../assets/images/consulta-terapeutica/consulta-transformacion.jpg'
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
@@ -97,9 +98,12 @@ function Bioemocion() {
             </motion.div>
             <motion.div className="intro-image" variants={fadeInUp}>
               <div className="intro-image-frame">
-                <div className="intro-image-placeholder">
-                  <span className="intro-icon">✨</span>
-                </div>
+                <img 
+                  src={consultaTransformacion} 
+                  alt="Espacio de transformación y sanación"
+                  className="intro-image-real"
+                  loading="lazy"
+                />
               </div>
             </motion.div>
           </motion.div>

@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import './HabitarEmociones.css'
 import habitarHero from '../assets/images/habitar-emociones/habitar-emociones-hero.jpg'
+import habitarContemplacion from '../assets/images/habitar-emociones/habitar-emociones-contemplacion.jpg'
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
@@ -93,12 +94,12 @@ function HabitarEmociones() {
             </motion.div>
             <motion.div className="intro-image" variants={fadeInUp}>
               <div className="intro-image-frame">
-                <img 
-                  src={habitarHero} 
-                  alt="Espacio de presencia y conexión con la naturaleza durante una práctica emocional"
-                  className="intro-image-real"
-                  loading="lazy"
-                />
+              <img 
+                src={habitarContemplacion} 
+                alt="Personas tomadas de la mano al atardecer, simbolizando conexión, comunidad y acompañamiento emocional"
+                className="intro-image-real"
+                loading="lazy"
+              />
               </div>
             </motion.div>
           </motion.div>

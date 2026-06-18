@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import './Meditaciones.css'
-import meditationHero from '../assets/images/home/meditation-garden.jpg'
+import meditacionSunrise from '../assets/images/meditaciones/meditaciones-hero-sunrise.png'
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
@@ -70,9 +70,9 @@ function Meditaciones() {
         <div className="hero-background">
           <div
             className="hero-image"
-            style={{ backgroundImage: `url(${meditationHero})` }}
+            style={{ backgroundImage: `url(${meditacionSunrise})` }}
             role="img"
-            aria-label="Meditaciones Guiadas - espacio de práctica y calma"
+            aria-label="Lago tranquilo al amanecer con reflejos dorados, simbolizando calma y presencia"
           />
           <div className="hero-overlay" />
         </div>

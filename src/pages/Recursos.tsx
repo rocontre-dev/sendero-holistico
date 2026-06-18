@@ -38,12 +38,6 @@ function Recursos() {
       {/* Explora por categoría */}
       <section className="resources-categories">
         <div className="container">
-          <h2 className="section-title">Explora por categoría</h2>
-          <div className="section-divider">
-            <span className="line"></span>
-            <span className="icon">❧</span>
-            <span className="line"></span>
-          </div>
           <div className="categories-grid">
             <Link className="category-button" to="/meditaciones">
               <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4">
