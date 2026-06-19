@@ -68,11 +68,6 @@ function Home() {
             <motion.p className="hero-description" variants={fadeInUp}>
               Bienvenidx a este espacio de acompañamiento terapéutico para tu autodescubrimiento, autoescucha y transformación profunda.
             </motion.p>
-            <motion.div className="hero-actions" variants={fadeInUp}>
-              <Link to="/sobre-mi" className="btn btn-hero-primary">
-                CONOCE MÁS
-              </Link>
-            </motion.div>
           </motion.div>
         </div>
       </section>
