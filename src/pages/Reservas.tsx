@@ -1,11 +1,6 @@
 import { motion } from 'framer-motion'
 import './Reservas.css'
-
-// ============================================
-// CONFIGURACIÓN - Google Form URL
-// ============================================
-const GOOGLE_FORM_URL =
-  "https://docs.google.com/forms/d/e/1FAIpQLSfC1prVykYc7dC1ZpkAihn-BV2C89j2JYiy5MymPSIvn3mPbA/viewform"
+import { getReservationUrl, isWhatsAppMode } from '../utils/reservationConfig'
 
 // ============================================
 // DATOS DE SERVICIOS
@@ -243,7 +238,7 @@ function Reservas() {
                   </div>
 
                   <a
-                    href={GOOGLE_FORM_URL}
+                    href={getReservationUrl(servicio.nombre)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="servicio-boton btn btn-primary btn-block"
@@ -339,14 +334,25 @@ function Reservas() {
               viaje de reconexión y sanación.
             </motion.p>
             <motion.div variants={fadeInUp}>
-              <a
-                href={GOOGLE_FORM_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-primary btn-large"
-              >
-                Solicitar Cita Ahora
-              </a>
+              {isWhatsAppMode() ? (
+                <a
+                  href={getReservationUrl()}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary btn-large"
+                >
+                  Solicitar Cita por WhatsApp
+                </a>
+              ) : (
+                <a
+                  href={getReservationUrl()}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary btn-large"
+                >
+                  Solicitar Cita Ahora
+                </a>
+              )}
             </motion.div>
           </motion.div>
         </div>

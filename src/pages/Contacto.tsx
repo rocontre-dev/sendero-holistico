@@ -145,7 +145,7 @@ function Contacto() {
                 <div className="info-card card">
                   <div className="info-icon">📧</div>
                   <h3>Correo Electrónico</h3>
-                  <p>hola@senderoholistico.com</p>
+                  <p>ivannagtzv@gmail.com</p>
                   <p className="info-note">Respondo en un plazo de 24-48 horas</p>
                 </div>
 
