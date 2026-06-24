@@ -1,4 +1,6 @@
+import { useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
+import PageLoader from './components/PageLoader'
 import Layout from './components/Layout'
 import Home from './pages/Home'
 import About from './pages/About'
@@ -19,8 +21,17 @@ import CosmosCorporeo from './pages/CosmosCorporeo'
 import Meditaciones from './pages/Meditaciones'
 
 function App() {
+  const [loading, setLoading] = useState(true)
+
+  const handleLoaderComplete = () => {
+    setLoading(false)
+  }
+
   return (
-    <Routes>
+    <>
+      {loading && <PageLoader onAnimationComplete={handleLoaderComplete} />}
+      <div style={{ opacity: loading ? 0 : 1, transition: 'opacity 0.7s ease-out' }}>
+        <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="sobre-mi" element={<About />} />
@@ -43,7 +54,9 @@ function App() {
         <Route path="contacto" element={<Contacto />} />
         <Route path="reservas" element={<Reservas />} />
       </Route>
-    </Routes>
+        </Routes>
+      </div>
+    </>
   )
 }
 

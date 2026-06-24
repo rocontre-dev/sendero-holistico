@@ -1,0 +1,359 @@
+/* ============================================
+   PAGE LOADER - SENDERO HOLÍSTICO
+   Duración total: 4 segundos
+   ============================================ */
+
+.page-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-cream, #FDFBF9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: opacity 0.7s ease-out;
+}
+
+.page-loader.is-exiting {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* ============================================
+   SÍMBOLO CENTRAL - HOJA ORGÁNICA
+   ============================================ */
+
+.loader-symbol {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: symbolFadeIn 1s ease-out forwards;
+}
+
+@keyframes symbolFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Hoja principal */
+.leaf-main {
+  position: absolute;
+  width: 60px;
+  height: 80px;
+  background: linear-gradient(
+    135deg,
+    var(--color-sage, #9CAF88) 0%,
+    var(--color-sage-light, #B8C5A8) 50%,
+    var(--color-sage, #9CAF88) 100%
+  );
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  transform: rotate(-15deg);
+  animation: leafBreathe 3s ease-in-out infinite;
+  box-shadow: 0 4px 20px rgba(156, 175, 136, 0.3);
+}
+
+@keyframes leafBreathe {
+  0%, 100% {
+    transform: rotate(-15deg) scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: rotate(-15deg) scale(1.05);
+    opacity: 1;
+  }
+}
+
+/* Hoja secundaria */
+.leaf-secondary {
+  position: absolute;
+  width: 40px;
+  height: 55px;
+  background: linear-gradient(
+    135deg,
+    var(--color-sage-light, #B8C5A8) 0%,
+    var(--color-sage, #9CAF88) 100%
+  );
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  transform: rotate(25deg) translate(15px, -10px);
+  animation: leafSecondaryBreathe 3s ease-in-out infinite 0.5s;
+  opacity: 0.7;
+  box-shadow: 0 4px 15px rgba(156, 175, 136, 0.2);
+}
+
+@keyframes leafSecondaryBreathe {
+  0%, 100% {
+    transform: rotate(25deg) translate(15px, -10px) scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: rotate(25deg) translate(15px, -10px) scale(1.08);
+    opacity: 0.85;
+  }
+}
+
+/* Brillo de la hoja */
+.leaf-glow {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(
+    circle,
+    rgba(156, 175, 136, 0.15) 0%,
+    rgba(156, 175, 136, 0.05) 40%,
+    transparent 70%
+  );
+  border-radius: 50%;
+  animation: glowPulse 3s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
+
+/* ============================================
+   SENDERO CURVO SVG
+   ============================================ */
+
+.loader-path {
+  width: 200px;
+  height: 60px;
+  margin-top: 20px;
+  color: var(--color-primary-muted, #9C8B7A);
+  opacity: 0;
+  animation: pathFadeIn 1s ease-out 0.5s forwards;
+}
+
+@keyframes pathFadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.path-line {
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  animation: drawPath 1.5s ease-out 1s forwards;
+}
+
+@keyframes drawPath {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* ============================================
+   PARTÍCULAS FLOTANTES
+   ============================================ */
+
+.particles {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  pointer-events: none;
+}
+
+.particle {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: var(--color-sage, #9CAF88);
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.particle-1 {
+  top: 20%;
+  left: 10%;
+  animation: particleFloat 4s ease-in-out 1.5s forwards;
+  background-color: var(--color-sage-light, #B8C5A8);
+}
+
+.particle-2 {
+  top: 30%;
+  right: 15%;
+  animation: particleFloat 4s ease-in-out 1.8s forwards;
+  background-color: var(--color-terracotta-light, #D4A87A);
+  width: 4px;
+  height: 4px;
+}
+
+.particle-3 {
+  bottom: 25%;
+  left: 20%;
+  animation: particleFloat 4s ease-in-out 2.1s forwards;
+  background-color: var(--color-primary-muted, #9C8B7A);
+  width: 5px;
+  height: 5px;
+}
+
+.particle-4 {
+  bottom: 30%;
+  right: 10%;
+  animation: particleFloat 4s ease-in-out 2.4s forwards;
+  background-color: var(--color-sage, #9CAF88);
+  width: 4px;
+  height: 4px;
+}
+
+.particle-5 {
+  top: 15%;
+  right: 25%;
+  animation: particleFloat 4s ease-in-out 2.7s forwards;
+  background-color: var(--color-terracotta-light, #D4A87A);
+  width: 5px;
+  height: 5px;
+}
+
+@keyframes particleFloat {
+  0% {
+    opacity: 0;
+    transform: translateY(0) translateX(0) scale(0);
+  }
+  20% {
+    opacity: 0.6;
+    transform: translateY(-10px) translateX(5px) scale(1);
+  }
+  80% {
+    opacity: 0.4;
+    transform: translateY(-30px) translateX(-10px) scale(0.8);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-50px) translateX(-15px) scale(0.5);
+  }
+}
+
+/* ============================================
+   TEXTO
+   ============================================ */
+
+.loader-text {
+  margin-top: 40px;
+  text-align: center;
+  opacity: 0;
+  animation: textFadeIn 1s ease-out 2.5s forwards;
+}
+
+@keyframes textFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.loader-title {
+  font-family: var(--font-heading, 'Cormorant Garamond', serif);
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 400;
+  color: var(--color-text-dark, #2D2620);
+  letter-spacing: 0.05em;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.loader-subtitle {
+  font-family: var(--font-body, 'Inter', sans-serif);
+  font-size: 0.95rem;
+  font-weight: 300;
+  color: var(--color-text-muted, #8B7E74);
+  letter-spacing: 0.15em;
+  margin-top: 12px;
+  text-transform: uppercase;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 768px) {
+  .loader-symbol {
+    width: 80px;
+    height: 80px;
+  }
+
+  .leaf-main {
+    width: 40px;
+    height: 55px;
+  }
+
+  .leaf-secondary {
+    width: 28px;
+    height: 38px;
+  }
+
+  .leaf-glow {
+    width: 70px;
+    height: 70px;
+  }
+
+  .loader-path {
+    width: 150px;
+    height: 45px;
+  }
+
+  .loader-title {
+    font-size: 1.8rem;
+  }
+
+  .loader-subtitle {
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+  }
+
+  .particles {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* ============================================
+   ACCESIBILIDAD - Reduced Motion
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  .page-loader {
+    transition: none;
+  }
+
+  .leaf-main,
+  .leaf-secondary,
+  .leaf-glow,
+  .particle {
+    animation: none;
+    opacity: 1;
+  }
+
+  .path-line {
+    stroke-dashoffset: 0;
+  }
+
+  .loader-symbol,
+  .loader-path,
+  .loader-text {
+    animation: fadeIn 0.3s ease-out forwards;
+  }
+}
