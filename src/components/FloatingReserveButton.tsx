@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import { isWhatsAppMode, getReservationUrl } from '../utils/reservationConfig'
 import './FloatingReserveButton.css'
 
@@ -55,8 +56,8 @@ function FloatingReserveButton() {
 
   // Modo form: navegar a página de reservas
   return (
-    <a 
-      href="/reservas"
+    <Link 
+      to="/reservas"
       className={`floating-reserve-button ${isVisible ? 'visible' : 'hidden'}`}
       aria-label="Reservar sesión"
     >
@@ -73,7 +74,7 @@ function FloatingReserveButton() {
         <span className="reserve-text-desktop">Reservar sesión</span>
         <span className="reserve-text-mobile">Reservar</span>
       </span>
-    </a>
+    </Link>
   )
 }
 
